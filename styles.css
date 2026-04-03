@@ -21,10 +21,14 @@ body {
 }
 
 /* <<<<<<<<<<<<<<<<<< MAIN PAGE >>>>>>>>>>>>>>>>>> */
+.hero-section {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
 .page-main {
     padding-left: 100px;
     padding-right: 100px;
-    /*background-color: green;*/
 }
 
 
@@ -33,34 +37,30 @@ body {
     padding-bottom: 80px;
 }
 
-.hero-section {
-    padding-top: 150px;
-    padding-bottom: 160px;
-    border-bottom: 1px solid #B7B7B7;
-}
-
 /* <<<<<<<<<<<<<<<<<< HEADINGS >>>>>>>>>>>>>>>>>> */
 
 h1 {
-    font-family: "Bodoni 72 Smallcaps", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Abhaya Libre ExtraBold", serif;
+    font-weight: 700;
     font-size: 65px;
     color: #080914;
     letter-spacing: 0.01em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
 }
 
 h2 {
-    font-family: "Bodoni 72 Smallcaps", serif;
+    font-family: "Sen", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
     color: #080914;
-    margin-top: 50px;
-    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: "Sometype Mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #080914;
 }
 
 p {
