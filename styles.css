@@ -1,0 +1,103 @@
+body {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    background-color: #FFF4E2;
+}
+
+.page-container {
+    max-width: 1200px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #164bff;*/
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    /*background-color: red;*/
+}
+
+/* <<<<<<<<<<<<<<<<<< MAIN PAGE >>>>>>>>>>>>>>>>>> */
+.page-main {
+    padding-left: 100px;
+    padding-right: 100px;
+    /*background-color: green;*/
+}
+
+
+.page-section {
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.hero-section {
+    padding-top: 150px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #B7B7B7;
+}
+
+/* <<<<<<<<<<<<<<<<<< HEADINGS >>>>>>>>>>>>>>>>>> */
+
+h1 {
+    font-family: "Bodoni 72 Smallcaps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    color: #080914;
+    letter-spacing: 0.01em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-family: "Bodoni 72 Smallcaps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #080914;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: Sen, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #080914;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
+a:link {
+    color: #080914;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a:visited {
+    color: #080914;
+}
+
+a:hover {
+    color: #D36008;
+}
+
+a:active {
+    color: #D36008;
+    font-weight: 700;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    color: #D36008;
+}
