@@ -76,6 +76,14 @@ h5 {
     color: #080914;
 }
 
+p {
+    font-family: "Sen", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #080914;
+}
+
 
 /* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
 a:link {
