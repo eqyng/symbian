@@ -4,6 +4,8 @@ body {
     background-color: #FFF4E2;
 }
 
+/* <<<<<<<<<<<<<<<<<< PAGE LAYOUT >>>>>>>>>>>>>>>>>> */
+
 .page-container {
     max-width: 800px;
     margin-left: auto;
@@ -15,11 +17,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-}
-
-/* <<<<<<<<<<<<<<<<<< MAIN PAGE >>>>>>>>>>>>>>>>>> */
-.hero-section {
-    text-align: center;
 }
 
 .page-main {
@@ -83,19 +80,42 @@ p {
     color: #080914;
 }
 
+/* <<<<<<<<<<<<<<<<<< HERO SECTION >>>>>>>>>>>>>>>>>> */
+.hero-section {
+    text-align: center;
+}
+
 .hero-section .heading h1 {
     margin: 0;
 }
 
 .hero-section .subheading h3 {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     margin:0;
 }
+
+/* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
 
 .latest-entry-content h2, h5{
     padding-bottom: 8px;
     margin: 0px;
 }
+
+.entry-metadata h5{
+    display: inline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+    padding-bottom: 8px;
+    margin: 0px;
+}
+
+.entry-subtitle h5{
+    padding-top: 5px;
+    margin: 0px;
+}
+
+/* <<<<<<<<<<<<<<<<<< ENTRIES >>>>>>>>>>>>>>>>>> */
 
 .entries-title h4{
     padding-top: 40px;
