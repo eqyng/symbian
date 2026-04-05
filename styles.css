@@ -40,6 +40,7 @@ h1 { /*heading*/
     font-size: 65px;
     color: #080914;
     letter-spacing: 0.01em;
+    margin: 0;
 }
 
 h2 { /*heading 2*/
@@ -82,12 +83,18 @@ p {
     color: #080914;
 }
 
-.hero-section h1 {
+.hero-section .heading h1 {
     margin: 0;
 }
 
-.hero-section h3 {
-    padding-bottom: 50px;
+.hero-section .subheading h3 {
+    padding-bottom: 20px;
+    margin:0;
+}
+
+.latest-entry-content h2, h5{
+    padding-bottom: 8px;
+    margin: 0px;
 }
 
 .entries-title h4{
