@@ -29,7 +29,7 @@ body {
 
 .page-section {
     padding-top: 10px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 /* <<<<<<<<<<<<<<<<<< HEADINGS >>>>>>>>>>>>>>>>>> */
@@ -80,6 +80,14 @@ p {
     font-style: normal;
     font-size: 14px;
     color: #080914;
+}
+
+.hero-section h1 {
+    margin: 0;
+}
+
+.hero-section h3 {
+    padding-bottom: 50px;
 }
 
 /* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
