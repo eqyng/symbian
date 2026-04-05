@@ -82,7 +82,6 @@ p {
     color: #080914;
 }
 
-
 /* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
 a:link {
     color: #080914;
@@ -110,4 +109,16 @@ a:active {
     font-style: normal;
     font-size: 55px;
     color: #D36008;
+}
+
+/* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
+.latest-entry-content {
+    font-family: "Sen", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #080914;
+}
+
+.footer-quote{
+    text-align: center;
 }
