@@ -66,6 +66,14 @@ h4 { /*subheading 2*/
     color: #080914;
 }
 
+h5 { /*subheading 2*/
+    font-family: "Sometype Mono", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #080914;
+}
+
 p {
     font-family: "Sen", serif;
     font-weight: 400;
@@ -81,6 +89,20 @@ p {
 .hero-section h3 {
     padding-bottom: 50px;
 }
+
+.entries-title h4{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.footer-quote{
+    text-align: center;
+}
+
+.footer {
+    padding-top: 50px;
+}
+
 
 /* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
 a:link {
@@ -119,15 +141,3 @@ a:active {
     color: #080914;
 }
 
-.entries-title h4{
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
-
-.footer-quote{
-    text-align: center;
-}
-
-.footer {
-    padding-top: 50px;
-}
