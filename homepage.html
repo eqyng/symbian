@@ -7,6 +7,40 @@
   <link rel="stylesheet" href="styles.css"/>
 
 </head>
+
+<script>
+    (async function () {
+      const res = await fetch("data/articles.json");
+      if (!res.ok) return;
+      const articles = await res.json();
+  
+      articles.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      const latest = articles[0];
+      const entries = articles.slice(1, 6);
+  
+      if (latest) {
+        document.querySelector(".latest-entry-content .entry-title h2").textContent = latest.title;
+        const timeEl = document.querySelector(".latest-entry-content .entry-date");
+        timeEl.dateTime = latest.date;
+        timeEl.textContent = latest.dateLabel || latest.date;
+        document.querySelector(".latest-entry-content .read-time").textContent = latest.readTime || "";
+        document.querySelector(".latest-entry-content .entry-subtitle").textContent = latest.subheading || "";
+        const link = document.querySelector(".latest-entry-container a.latest-entry-link");
+        if (link) link.href = latest.url;
+      }
+  
+      const list = document.querySelector(".entries-container");
+      if (list && entries.length) {
+        list.innerHTML = entries
+          .map(
+            (a) =>
+              `<article class="entry-row"><a href="${a.url}">${a.title}</a> <time datetime="${a.date}">${a.dateLabel || a.date}</time></article>`
+          )
+          .join("");
+      }
+    })();
+  </script>
+
 <body>
     <div class="page-container">
         <header class="page-header">
@@ -59,9 +93,6 @@
                 <p>© 2026 elisa nguyen</p>
             </div>
         </div>
-        
-    
     </div>
-
 </body>
 </html>
