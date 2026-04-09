@@ -1,20 +1,11 @@
 [
-    {
-      "title": "Newest Post",
-      "date": "2026-04-06",
-      "dateLabel": "06 Apr '26",
-      "readTime": "1 minute read",
-      "subheading": "optional subtitle",
-      "slug": "newest-post",
-      "url": "articles/newest-post.html"
-    },
-    {
-      "title": "Critical Thinking Explained",
-      "date": "2025-03-02",
-      "dateLabel": "02 Mar '25",
-      "readTime": "1 minute read",
-      "subheading": "on the erosion of doubt in the age of answers",
-      "slug": "critical-thinking-explained",
-      "url": "articles/critical-thinking-explained.html"
-    }
-  ]
+  {
+    "title": "The future through lenses",
+    "date": "2021-07-17",
+    "dateLabel": "17 Jul '21",
+    "readTime": "5 min read",
+    "subheading": "...",
+    "slug": "the-future-through-lenses",
+    "url": "articles/the-future-through-lenses.html"
+  }
+]
