@@ -96,7 +96,7 @@
             list.innerHTML = entries
               .map(
                 (a) =>
-                  `<article class="entry-row"><a href="${a.url}">${a.title}</a> <time datetime="${a.date}">${a.dateLabel || a.date}</time></article>`
+                  `<article class="entries-metadata"><time datetime="${a.date}">${a.dateLabel || a.date}</time><a href="${a.url}">${a.title}</a></article>`
               )
               .join("");
           }
