@@ -117,9 +117,26 @@ p {
 
 /* <<<<<<<<<<<<<<<<<< ENTRIES >>>>>>>>>>>>>>>>>> */
 
+.entry-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+    padding-bottom: 8px;
+    margin: 0px;
+}
+
 .entries-title h4{
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.entries-container {
+    margin: 0;
+}
+
+.entries-container article {
+    padding-bottom: 10px;
 }
 
 .footer-quote{
@@ -161,7 +178,7 @@ a:active {
     color: #D36008;
 }
 
-/* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<< LATEST >>>>>>>>>>>>>>>>>> */
 .latest-entry-content {
     font-family: "Sen", serif;
     font-weight: 400;
