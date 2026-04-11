@@ -1,8 +1,71 @@
-body {
-    font-family: 'Sen', sans-serif;
-    font-size: 18px;
-    background-color: #FFF4E2;
+/* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
+.latest-entry-container {
+    margin: 0;
 }
+
+.latest-entry-content h2, h5{
+    padding-bottom: 8px;
+    margin: 0px;
+}
+
+.latest-entry-content {
+    font-family: "Sen", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #080914;
+}
+
+.entry-metadata h5{
+    display: inline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+    padding-bottom: 8px;
+    margin: 0px;
+}
+
+.entry-subtitle h5{
+    padding-top: 5px;
+    margin: 0px;
+}
+
+/* <<<<<<<<<<<<<<<<<< ENTRIES >>>>>>>>>>>>>>>>>> */
+
+.entries-container {
+    padding-top: 5px;
+    margin: 0;
+    background-color: red;
+}
+
+.entries-historical h4{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0px;
+    background-color: blue;
+}
+
+.entries-row h5{
+    display: inline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
+    padding-bottom: 10px;
+    margin: 0px;
+    background-color: yellow;
+}
+
+/* <<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>> */
+.footer-quote{
+    text-align: center;
+    background-color: green;
+}
+
+.footer {
+    padding-top: 50px;
+    text-align: right;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* <<<<<<<<<<<<<<<<<< PAGE LAYOUT >>>>>>>>>>>>>>>>>> */
 
@@ -29,7 +92,20 @@ body {
     padding-bottom: 100px;
 }
 
-/* <<<<<<<<<<<<<<<<<< HEADINGS >>>>>>>>>>>>>>>>>> */
+.hero-section {
+    text-align: center;
+}
+
+.hero-section .heading h1 {
+    margin: 0;
+}
+
+.hero-section .subheading h3 {
+    padding-bottom: 50px;
+    margin:0;
+}
+
+/* <<<<<<<<<<<<<<<<<< FONT FAMILIES >>>>>>>>>>>>>>>>>> */
 
 h1 { /*heading*/
     font-family: "Abhaya Libre ExtraBold", serif;
@@ -80,75 +156,10 @@ p {
     color: #080914;
 }
 
-/* <<<<<<<<<<<<<<<<<< HERO SECTION >>>>>>>>>>>>>>>>>> */
-.hero-section {
-    text-align: center;
-}
-
-.hero-section .heading h1 {
-    margin: 0;
-}
-
-.hero-section .subheading h3 {
-    padding-bottom: 50px;
-    margin:0;
-}
-
-/* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
-
-.latest-entry-content h2, h5{
-    padding-bottom: 8px;
-    margin: 0px;
-}
-
-.entry-metadata h5{
-    display: inline;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    align-items: baseline;
-    padding-bottom: 8px;
-    margin: 0px;
-}
-
-.entry-subtitle h5{
-    padding-top: 5px;
-    margin: 0px;
-}
-
-/* <<<<<<<<<<<<<<<<<< ENTRIES >>>>>>>>>>>>>>>>>> */
-
-.entry-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    align-items: baseline;
-    padding-top: 10px;
-    margin: 0px;
-    background-color: yellow;
-}
-
-.entries-title h4{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: 0px;
-    background-color: blue;
-}
-
-.entries-container {
-    padding-top: 5px;
-    margin: 0;
-    background-color: red;
-}
-
-
-.footer-quote{
-    text-align: center;
-    background-color: green;
-}
-
-.footer {
-    padding-top: 50px;
-    text-align: right;
+body {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    background-color: #FFF4E2;
 }
 
 
@@ -179,16 +190,4 @@ a:active {
     font-style: normal;
     font-size: 55px;
     color: #D36008;
-}
-
-/* <<<<<<<<<<<<<<<<<< LATEST >>>>>>>>>>>>>>>>>> */
-.latest-entry-content {
-    font-family: "Sen", serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #080914;
-}
-
-.latest-entry-container {
-    margin: 0;
 }
