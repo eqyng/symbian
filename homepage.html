@@ -76,7 +76,7 @@
       
           articles.sort((a, b) => String(b.date).localeCompare(String(a.date)));
           const latest = articles[0];
-          const entries = articles.slice(1, 6);
+          const entries = articles.slice(1);
       
           if (latest) {
             document.querySelector(".latest-entry-content .entry-title h2").textContent = latest.title;
