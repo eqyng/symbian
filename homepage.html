@@ -57,7 +57,7 @@
     
             <!-- FOOTER -->
             <div class="footer-quote">
-                    <h4>How do we shape technology, <br> and how does technology shape us?</h4>
+                    <h3>How do we shape technology, <br> and how does technology shape us?</h3>
             </div>
         </main>
     
@@ -87,7 +87,7 @@
             timeEl.textContent = latest.dateLabel || latest.date;
             document.querySelector(".latest-entry-content .read-time").textContent = latest.readTime || "";
             document.querySelector(".latest-entry-content .entry-subtitle").textContent = latest.subheading || "";
-            const link = document.querySelector(".latest-entry-container a.latest-entry-link");
+            const link = document.querySelector(".latest-entry-container a.entry-title");
             if (link) link.href = latest.url;
           }
       
