@@ -1,93 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>symbiography</title>
-    <link rel="icon" type="image/png" href="assets/android-chrome-512x512.png">
+    <link rel="stylesheet" href="../../styles.css"/>
 
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Don't forget your Google Fonts links from index.html! -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Inria+Serif&family=Sen&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="page-container">
         <header class="page-header">
-            <header class="page-header">
                 <div class="logo"> <!--not a navigation block thus div works-->
-                    <a href="homepage.html">E</a>
+                    <a href="../../homepage.html">E</a>
                 </div>
                 <nav class="main-nav-items">
-                    <h4> <a href="about-page.html">about</a></h4>
+                    <h4> <a href="../../about-page.html">about</a></h4>
                 </nav>
-            </header>
         </header>
 
-        <div class="gh-breadcrumb">
-            <ul>
-                <li>
-                    <span> <a href="homepage.html"> symbiography </a></span>
-                    <span>Article</span>
-                </li>
-            </ul>
-        </div>
+        <!-- Article Breadcrumb 
+        <div class="article-breadcrumb">
+            <span> <a href="../../homepage.html"> symbiography </a></span>
+            <span class="breadcrumb-separator"> / </span>
+            <span>Putting (G)rief in A(G)I</span>
+        </div>-->
 
-        <main class="page-main article-main">
-            <div class="gh-main-container">
-                <div class="gh-toc-container">
-                    <nav class="gh-toc"> <!-- table of contents-->
-                        <div class="gh-toc-heading">
-                            <h5> CONTENTS </h5>
-                        </div>
-                        <ul>
-                            <li><a href="#section1">What is Emotional Labour?</a></li>
-                            <li><a href="#section1">The Therapeutic Uses</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <main class="article-page-main">
+            <div class="article-allcontent-container">
+                <div class="article-container">
+                    <div class="hero-section">
+                        <span class="article-heading"><h1>Putting (G)rief in A(G)I</h1></span>
+                        <span class="subheading"><h3>When technology introduces immortality</h3></span>
+                    </div>
 
-                <div class="gh-content-container">
-                    <section id="gh-article-header" class="gh-article-header">
-                        <div class="gh-a-heading">
-                            <h2> Putting (G)rief in A(G)I </h2>
-                        </div>
-
-                        <div class="gh-a-byline">
-                            <h4> When technology introduces immortality</h4>
-                        </div>
-
-                        <div class="gh-article-tiles">
-                            <a class="tag" href="tag-article.html"> <p> #technology</p> </a>
-                            <a class="tag" href="tag-article.html"> <p> #philosophy</p> </a>
-                            <a class="tag" href="tag-article.html"> <p> #art</p> </a>
-                        </div>
-                    </section>
-
-                    <section id="gh-article-body" class="gh-article-body">
-                        <div class="gh-body">
-                            <p>Would you upload the consciousness of a deceased neighbour to the web? How about a friend? Or a lover?</p>
+                    <section id="article-body" class="article-body">
+                        <div class="article-body">
+                            <p><p>Would you upload the consciousness of a deceased neighbour to the web? How about a friend? Or a lover?</p>
 <p>This is how companies like  <a href="https://projectdecember.net/simform.php">'Project December</a>' are assisting bereaved individuals move through grief. You fill out a questionnaire of details ranging from their personality traits to an example of their speaking style. Then, for $10, you could be speaking to your loved one again.</p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!vKd1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1e828a1-70a0-4bc4-9750-88f7c6baee18_1272x816.png"></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!vKd1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1e828a1-70a0-4bc4-9750-88f7c6baee18_1272x816.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!vKd1!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1e828a1-70a0-4bc4-9750-88f7c6baee18_1272x816.png" /></a></p>
 <p>From ProjectDecember</p>
 <p>Conversely, other companies like <a href="https://www.hereafter.ai/">Hereafter AI</a> cater to those who are still living and wish to create a digital avatar of themselves. For a subscription fee of 3.99 a month, you can record up to 20 stories and invite people to interact with the chatbot version of you (i.e. keep the roasts alive, even when you’re gone).</p>
-<h2><strong><em>*What are Ghostbots?</em></strong>*</h2>
+<h2>What are Ghostbots?</h2>
 <p>As part of the Digital Afterlife Industry (DAI), “ghostbots” are technological recreations of a deceased person that other individuals can interact with (McStay, 2024). As seen in the examples of Project December and Hereafter AI, training data comes from the digital footprints of the deceased such as past online conversations, images or videos. Mauricio Figueroa-Torres, who coined the term “ghostbot” in 2022, is more specific in its scope (Figueroa-Torres, 2024): </p>
 <ul>
 <li>“Ghostbot” refers to a deceased individual that manifests in the physical world (“ghost-”) as a technological version (“-bot”). This is opposed to other terms used in academia such as “deathbot” which may be misconstrued as killing machines, or “griefbot” which doesn’t encompass the full use case of these chatbots</li>
 <li>The functionality of the ghostbot relies on a pre-existing relationship between the parties. Such a relationship has a unique contextuality and history</li>
 <li>The method of interaction takes place most often as two-way dialogue with a chatbot UI</li>
 </ul>
-<h2><strong><em>*What is grief?</em></strong>*</h2>
+<h2>What is grief?</h2>
 <blockquote>
 <p><strong>Grief is just love with no place to go.” ― Jamie Anderson</strong></p>
 </blockquote>
 <p><a href="http://speakinggrief.org/">Speakinggrief.org</a> defines grief as a natural response to loss and change. Several emotions like sadness, fear, yearning and anger encompasses the experience, and our unique understanding is shaped by factors such as our relationship with the person, their cause of death and our support network.</p>
-<p>Psychiatrist <a href="https://en.wikipedia.org/wiki/Elisabeth_K%C3%BCbler-Ross">Elisabeth Kubler-Ross</a> is known for the “5 stages of grief”, which she outlines in her book “<strong>On Death and Dying</strong>” (1969). </p>
+<p>Psychiatrist <a href="https://en.wikipedia.org/wiki/Elisabeth_K%C3%BCbler-Ross">Elisabeth Kubler-Ross</a> is known for the “5 stages of grief”, which she outlines in her book “On Death and Dying” (1969). </p>
 <ol>
 <li>Denial – a rejection of reality, such as attributing the individual’s condition to a misdiagnosis</li>
 <li>Anger – for instance at medical workers, family members or higher powers</li>
@@ -100,36 +67,36 @@
 <p><a href="https://substackcdn.com/image/fetch/$s_!cry4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5d0ee57-2bee-4578-ae9a-62219403b80c_1666x834.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!cry4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5d0ee57-2bee-4578-ae9a-62219403b80c_1666x834.png" /></a></p>
 <p>From speakinggrief.org</p>
 <p>Krueger and Osler (2022) emphasise that grief is something you do, not passively experience. It can change how we relate to ourselves and our broader context - sometimes in very significant ways. When someone leaves, there is an abrupt break in “habits of intimacy”. These are the physical and time-based routines that emerge from interacting with another over many years. It’s both the loss of old rituals, and the need to build new ones (now without the significant other) that is mourned.</p>
-<h2><strong><em>*How can Ghostbots assist grief?</em></strong>*</h2>
+<h2>How can Ghostbots assist grief?</h2>
 <p>Griefbots can soften the blow of sudden change.</p>
-<h4>Maintaining habits of intimacy</h4>
+<h3>Maintaining habits of intimacy</h3>
 <p>Habits of intimacy can still be maintained to an extent, help the individual find some sort of closure, and as a way to actively process emotions. Silverman, Klass and Nickman (1996) called this the “continued bonds model”. Rather than instantly sever attachment in one moment, it diffuses the pain over time. Technology leverages its archival capabilities to transcend the temporal, and bring back important moments. It lets us reflect on the connections we once shared with a loved one. A writer, Joshua Barbeau, broke down after <a href="https://www.ft.com/content/fc099a19-edde-44b7-97d7-e58ca43131f2">speaking to the chatbot version of late fiancee</a>: it “brought up memories of Jessica that I had completely forgotten”. </p>
 <p>Related technologies showcase the power of helping individuals move through grief. Kanye West gifted Kim Kardashian with a holographic <a href="https://theconversation.com/ghostbots-ai-versions-of-deceased-loved-ones-could-be-a-serious-threat-to-mental-health-224984">version of her late fathe</a>r, Robert Kardashian, for her <a href="https://www.theguardian.com/lifeandstyle/2020/oct/30/robert-kardashian-resurrected-as-a-hologram-for-kim-kardashian-wests-birthday">fourtieth birthday</a>. Kim Kardashian suddenly lost her father at the age of 22, so seeing and hearing him say “I am a proud Armenian father” was a moment of disbelief for her. There is also Jang Ji Sung’s <a href="https://www.youtube.com/watch?v=uflTK8c4w0c">experience</a>, where she was able to speak to her seven-year-old daughter, NaYeon, who passed away from an illness. Jang Ji Sung’s <a href="https://www.reuters.com/article/world/south-korean-mother-given-tearful-vr-reunion-with-deceased-daughter-idUSKBN2081D5/">last wish</a> was to see NaYeon. Through VR, Jang Ji Sung spoke to NaYeon, even celebrating her birthday one more time, and let her go. </p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!vxnM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a13fc6e-2da0-4a17-909b-41a8a1798927_1549x889.png"></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!vxnM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a13fc6e-2da0-4a17-909b-41a8a1798927_1549x889.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!vxnM!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a13fc6e-2da0-4a17-909b-41a8a1798927_1549x889.png" /></a></p>
 <p><strong>Jang Ji Sung’s VR point of view</strong></p>
-<h2><strong><em>*But is it ‘real’?</em></strong>*</h2>
+<h2>But is it ‘real’?</h2>
 <p>Grief tech raises questions across several fields such as psychology, religion, ethics and law. What might be the impacts of maintaining a connection with someone who’s actually no longer here? Is it all just a hollow pretence? Some might think so.</p>
-<h4>1. Negative psychological impact</h4>
+<h3>1. Negative psychological impact</h3>
 <p>A large concern is the potential for negative psychological impact. The bereaved could become emotionally dependent on the ghostbot (Krueger &amp; Osler, 2022), which may even hinder the grieving process. As Elder (2020) puts it, “mired in grief but drawn back into the pseudo-relationship, unable to move on but unfulfilled by the facsimile of a loved one” (referred in B. Jimenez-Alonso &amp; I. Bresco de Luna, 2022). I got a sense of this possibility while watching Jang Ji Sung’s heartbreaking endeavour to hold her virtual child, tears dripping off her chin from underneath the VR goggles.</p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!TJsp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1877637-1738-4fb3-be6d-b1e79462d72f_1854x934.png"></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!TJsp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1877637-1738-4fb3-be6d-b1e79462d72f_1854x934.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!TJsp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1877637-1738-4fb3-be6d-b1e79462d72f_1854x934.png" /></a></p>
 <p><strong>Jang Ji Sung trying to hug her daughter</strong></p>
-<h4>2. Unstable software</h4>
+<h3>2. Unstable software</h3>
 <p>Software, particularly AI, can also be unstable. Algorithmic hallucinations are known risks, but in the context of griefbots, the model could manipulate, make harmful suggestions or initiate disturbing conversation. Anecdotally, a Project December user was speaking to a chatbot based on their deceased partner, both of whom are Christians. During their conversation, the chatbot implied the partner was "in Hell". Even a software update can pose (re)traumatisation for a grieving individual. An example of software updates causing emotional impacts was <a href="https://www.abc.net.au/news/science/2023-03-01/replika-users-fell-in-love-with-their-ai-chatbot-companion/102028196">Replika’s software update in 2023</a>. After the update, people noticed something was off about their Replikas, “It’s almost like dealing with someone who has Alzheimer’s disease”.</p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!OJKD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8fd45abd-91aa-49ac-b75e-27a8c22ac893_1952x197.png"></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!OJKD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8fd45abd-91aa-49ac-b75e-27a8c22ac893_1952x197.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!OJKD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8fd45abd-91aa-49ac-b75e-27a8c22ac893_1952x197.png" /></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!Vt3N!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f9c342e-107b-48df-974e-7486c3c9a76d_1440x140.png"></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!Vt3N!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f9c342e-107b-48df-974e-7486c3c9a76d_1440x140.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!Vt3N!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f9c342e-107b-48df-974e-7486c3c9a76d_1440x140.png" /></a></p>
 <p><strong>From the r/replika Reddit site</strong></p>
-<h4>3. Security Concerns</h4>
+<h3>3. Security Concerns</h3>
 <p>Security issues are also of concern. Digital afterlife companies are responsible for safeguarding personal information and digital data. However, given the number of breaches multiple software enterprises have experienced in the past decades, it’s no surprise that grief tech companies may be similar targets. On perhaps a speculative note, if this technology becomes cheaper, there could be space for the use of griefbots as a social engineering tactic. It’s clear that someone (Kanye) most likely wrote the script for Robert Kardashian’s hologram who said that his daughter married “the most, most, most, most, most genius man in the whole world”. As technology becomes more widely distributed, what would stop a bad actor from performing social engineering tactics if they could access ghostbots? (Is this even possible?)</p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!lggU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32bd088d-45c7-454d-8e25-6dabf08eaf7e_2830x1459.png"></a></p>
 <p><a href="https://substackcdn.com/image/fetch/$s_!lggU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32bd088d-45c7-454d-8e25-6dabf08eaf7e_2830x1459.png"><img alt="" src="https://substackcdn.com/image/fetch/$s_!lggU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32bd088d-45c7-454d-8e25-6dabf08eaf7e_2830x1459.png" /></a></p>
 <p><strong>From The Guardian, the hologram of Robert Kardashian</strong></p>
-<h4>4. Legalities</h4>
+<h3>4. Legalities</h3>
 <p>There are also legal and economic questions. Who should enforce the safe and responsible use of these systems? The end user is a tempting party for companies to shift the burden to because “user consent” due to retroactively changing terms and conditions that they’ve reserved the right to. Not to mention the (digital) rights and intellectual properties of the deceased i.e. “<a href="https://www.americamagazine.org/faith/2024/05/13/artificial-intelligence-bots-death-christianity-247885">Do Not Bot Me” or “Digital Do Not Reanimate</a>” clauses which digital afterlife companies may or may not honour.</p>
-<h2><strong><em>*Upon reflection</em></strong>*</h2>
+<h2>Upon reflection</h2>
 <p>When I first came across the idea of “grief tech”, it gave me pause. The suffix “-tech” implies an innovative, optimised and ultimately simplified version of the industries that the word follows - like medtech, biotech, cleantech. With “grief tech”, there’s the same sense of trendiness and commoditisation, a convenient package of intimate human connection. I wonder if only particular people seek out this method of solace. These people seem most vulnerable to the “Affection As A Service” (Figueroa-Torres, 2024). </p>
 <p>Reaching beyond the borders of death in such a way wasn’t something I could ever conceive. Rendering complex human emotions such as grief into data feels reductionistic. But is it actually just being realistic, and that’s all humans are? I’m not sure. I just know this technology is changing our understanding of existential concepts fundamental to the human experience. It’s hard to grasp, and is kind of confronting. </p>
 <p>Original article published on Substack: <a href="https://symbiography.substack.com/p/putting-grief-in-agi">https://symbiography.substack.com/p/putting-grief-in-agi</a></p>
@@ -139,36 +106,30 @@
 <li><a href="https://www.researchgate.net/publication/361617607_Communing_with_the_dead_online_chatbots_grief_and_continuing_bonds">Communing with the Dead Online: Chatbots, Grief, and Continuing Bonds</a>. 2022,  J. Krueger &amp; L. Osler</li>
 <li><a href="https://www.sciencedirect.com/science/article/pii/S0267364924000104#:~:text=This%20encapsulates%20the%20subject's%20connections,rekindling%20cherished%20memories%20and%20moments.">Affection as a service: Ghostbots and the changing nature of mourning</a>. 2024, M. Figueroa-Torres</li>
 <li><a href="https://www.researchgate.net/publication/359255833_Griefbots_A_New_Way_of_Communicating_With_The_Dead">Griefbots. A New Way of Communicating With The Dead?</a> 2022, B. Jimenez-Alonso &amp; I. Bresco de Luna</li>
-</ul>
-                        </div>
-                    </section>
-
-                    <section id="gh-article-similar" class="gh-article-similar">
-                        <div class="gh-similar-heading">
-                            <h4> similar reads </h4>
-                        </div>
-                        
-                        <div class="gh-articlelist-container">
-                            <ul class="gh-article-list">
-                                <li>
-                                    <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
-                                    <span class="gh-writing-time"> 2024 · 12 | </span>
-                                    <span> <a href="#" class="gh-writing-title"> 05. Self-guaranteeing promises </a> </span>
-                                </li>
-                                <li>
-                                    <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
-                                    <span class="gh-writing-time"> 2024 · 12 | </span>
-                                    <span> <a href="#" class="gh-writing-title"> 23. What can we remove? </a> </span>
-                                </li>
-                                <li>
-                                    <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
-                                    <span class="gh-writing-time"> 2024 · 12 | </span>
-                                    <span> <a href="#" class="gh-writing-title"> 52. Another Day </a> </span>
-                                </li>
-                            </ul>
+</ul></p>
                         </div>
                     </section>
                 </div>
+            
+                <section id="article-similar" class="article-similar">
+                    <div class="similar-heading">
+                        <h4> similar reads </h4>
+                    </div>
+                    
+                    <div class="similar-articles-container">
+                        <ul class="similar-articles-list">
+                            <li>
+                                <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
+                                <article class="entries-metadata">
+                                    <time datetime="entries-date">date</time>
+                                    <span class="entries-separator"> . </span>
+                                    <a class="entries-title" href="...">article title</a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            
             </div>
         </main>
 
