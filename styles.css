@@ -97,16 +97,21 @@
     font-size: 12px;
 }
 
-
+/* <<<<<<<<<<<<<<<<<< ABOUT >>>>>>>>>>>>>>>>>> */
+.about-title {
+    text-align: center;
+}
 
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
 
-
-
 /* <<<<<<<<<<<<<<<<<< PAGE LAYOUT >>>>>>>>>>>>>>>>>> */
+
+body {
+    background-color: #FFF4E2;
+}
 
 .page-container {
     max-width: 800px;
@@ -252,7 +257,7 @@ h4 { /*subheading 2*/
     font-family: "Sometype Mono", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 17px;
+    font-size: 19px;
     color: #080914;
 }
 
@@ -271,10 +276,6 @@ p { /*article body*/
     font-style: normal;
     font-size: 21px;
     color: #080914;
-}
-
-body {
-    background-color: #FFF4E2;
 }
 
 
