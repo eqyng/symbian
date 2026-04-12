@@ -4,24 +4,45 @@
     background-color: purple;
 }
 
+.latest-entry {
+    font-family: "Sometype Mono", monospace;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    margin: 0px;
+    color: #080914;
+}
+
 .latest-entry-content h2, h5{
     padding-bottom: 8px;
     margin: 0px;
 }
 
-.latest-entry-content {
-    font-family: "Sen", serif;
-    font-weight: 400;
+.latest-entry-content{
+    font-family: "Abhaya Libre ExtraBold", serif;
+    font-weight: 300;
     font-size: 14px;
     color: #080914;
 }
 
 .entry-metadata {
-    font-family: "Sen", sans-serif;
-    font-size: 14px;
+    font-family: "Sometype Mono", monospace;
+    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    gap: 0.5rem 1rem;
+    margin: 0px;
+}
+
+.entry-subtitle {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 10px;
+    padding-bottom: 10px;
     gap: 0.5rem 1rem;
     margin: 0px;
 }
