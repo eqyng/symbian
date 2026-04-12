@@ -157,7 +157,6 @@
   margin: 0.35rem 0;
 }
 
-
 /* <<<<<<<<<<<<<<<<<< FONT FAMILIES >>>>>>>>>>>>>>>>>> */
 
 h1 { /*heading*/
@@ -169,12 +168,38 @@ h1 { /*heading*/
     margin: 0;
 }
 
+.article-heading h1 { /*article heading*/
+    font-family: "Abhaya Libre ExtraBold", serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #080914;
+    padding-top: 30px;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+
+.subheading h3 {
+    font-family: "Sometype Mono", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 h2 { /*heading 2*/
     font-family: "Sen", serif;
     font-weight: 500;
     font-size: 23px;
     color: #080914;
     letter-spacing: 0.01em;
+}
+
+.article-body h2 {
+    font-family: "Sen", serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 h3 { /*subheading*/
@@ -184,6 +209,13 @@ h3 { /*subheading*/
     font-size: 25px;
     padding-top: 15px;
     color: #080914;
+}
+
+.article-body h3 {
+    font-family: "Sen", serif;
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 h4 { /*subheading 2*/
@@ -200,16 +232,6 @@ h5 { /*subheading 2*/
     font-style: normal;
     font-size: 14px;
     color: #080914;
-}
-
-h6 { /*article heading*/
-    font-family: "Abhaya Libre ExtraBold", serif;
-    font-weight: 700;
-    font-size: 45px;
-    color: #080914;
-    padding-top: 30px;
-    letter-spacing: 0.01em;
-    margin: 0;
 }
 
 p { /*article body*/
