@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human-Machine Mapping</title> <!-- Change the title -->
+    <title>symbiography</title>
     <link rel="icon" type="image/png" href="assets/android-chrome-512x512.png">
 
-    <!-- This is the crucial line that links your existing styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Don't forget your Google Fonts links from index.html! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,32 +17,21 @@
 <body>
     <div class="page-container">
         <header class="page-header">
-            <div class="logo"> <!--not a navigation block thus div works-->
-                <a href="index.html">E</a>
-            </div>
-
-            <nav class="main-nav-items">
-                <ul class="nav-list">
-                    <li class="dropdown">
-                        <a href="#"><h5> Observatory</h5> </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index-glasshouse.html">Glasshouse</a></li>
-                            <li><a href="index-studio.html">Studio</a></li>
-                            <li><a href="index-library.html">Library</a></li>
-                            <li><a href="index-cabinet.html">Cabinet</a></li>
-                        </ul>
-                    </li>
-                        
-                    <li> <h5> <a href="About.html">About</a></h5> </li>
-                </ul>
-            </nav>
+            <header class="page-header">
+                <div class="logo"> <!--not a navigation block thus div works-->
+                    <a href="homepage.html">E</a>
+                </div>
+                <nav class="main-nav-items">
+                    <h4> <a href="about-page.html">about</a></h4>
+                </nav>
+            </header>
         </header>
 
         <div class="gh-breadcrumb">
             <ul>
                 <li>
-                    <span> <a href="index-glasshouse.html"> Glasshouse </a></span>
-                    <span>/ Article 33. </span>
+                    <span> <a href="homepage.html"> symbiography </a></span>
+                    <span>Article</span>
                 </li>
             </ul>
         </div>
@@ -51,7 +39,7 @@
         <main class="page-main article-main">
             <div class="gh-main-container">
                 <div class="gh-toc-container">
-                    <nav class="gh-toc">
+                    <nav class="gh-toc"> <!-- table of contents-->
                         <div class="gh-toc-heading">
                             <h5> CONTENTS </h5>
                         </div>
@@ -65,11 +53,11 @@
                 <div class="gh-content-container">
                     <section id="gh-article-header" class="gh-article-header">
                         <div class="gh-a-heading">
-                            <h2> 33. On the rise of chatgptherapy </h2>
+                            <h2> {{TITLE}} </h2>
                         </div>
 
                         <div class="gh-a-byline">
-                            <h4> How much compute does emotional processing take? </h4>
+                            <h4> {{SUBHEADING}}</h4>
                         </div>
 
                         <div class="gh-article-tiles">
@@ -81,15 +69,7 @@
 
                     <section id="gh-article-body" class="gh-article-body">
                         <div class="gh-body">
-                            <p> “Have you asked ChatGPT about this?“ </p>
-
-                            <p> is a phrase I find myself using when a friend is in an emotional quandary. I personally find it interesting to see what ChatGPT says, and sometimes it offers interesting perspectives I sometimes hadn’t considered. </p>
-                                
-                            <p> But it did remind me - I recently came across this post by Mel Sellick: </p>
-                                
-                            <p> The original Guardian article mentions how AI is being used for anything from a calm mediator for arguments, to a “teacher for emotional intelligence” to a grief companion. However, as Sellick points out, the question is whether we’re “starting to outsource our emotional labour”. </p>
-                                
-                            <p>From the article’s standpoint, the positive uses seem compelling enough. Yvette, for instance, used ChatGPT as a way to confront her ex. Rather than agonising over how to craft an appropriately assertive response for hours, she vented, unrestrained, into the text field. Within seconds, it gave Yvette a more balanced message to send, without her needing to expend excess emotional energy. And there’s Tim, who leans on ChatGPT to help him debrief after marital conflicts, role-play difficult conversations or word loving messages to his wife. It’s a stark contrast to the hyper-masculine relationship guru advice he used to find. </p>
+                            {{BODY_HTML}}
                         </div>
                     </section>
 
@@ -124,19 +104,10 @@
 
         <!--Footer-->
         <footer>
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p> Find me here too</p>
-                    <p class="copyright"> &copy; 2025 Elisa Nguyen. All rights reserved. </p>
+            <div class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2026 elisa n. all rights reserved.</p>
                 </div>
-                <nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li><a href="index-glasshouse.html">Glasshouse</a></li>
-                        <li><a href="index-studio.html">Studio</a></li>
-                        <li><a href="index-library.html">Library</a></li>
-                        <li><a href="index-cabinet.html">Cabinet</a></li>
-                    </ul>
-                </nav>
             </div>
         </footer>
     </div>
