@@ -4,7 +4,7 @@
     "date": "2025-09-09",
     "dateLabel": "09 Sep '25",
     "readTime": "5 minute read",
-    "subheading": "Reflections on where software glamour meets military might",
+    "subheading": "Where software glamour meets military might",
     "slug": "moral-greyzone-militarymarketing",
     "url": "content/articles/moral-greyzone-militarymarketing.html"
   },
@@ -27,7 +27,7 @@
     "url": "content/articles/rise-of-chatgptherapy.html"
   },
   {
-    "title": "Psychoanalytic take of 'I have no mouth, and I must scream' (1967)",
+    "title": "Psychoanalytic take of 'I have no mouth...' (1967)",
     "date": "2024-10-05",
     "dateLabel": "05 Oct '24",
     "readTime": "5 minute read",
@@ -43,6 +43,69 @@
     "subheading": "When technology introduces immortality",
     "slug": "griefbots",
     "url": "content/articles/griefbots.html"
+  },
+  {
+    "title": "Book Notes - The Art of Gathering",
+    "date": "2022-02-15",
+    "dateLabel": "15 Feb '22",
+    "readTime": "5 minute read",
+    "subheading": "Tips on gathering well",
+    "slug": "booknotes-art-of-gathering",
+    "url": "content/articles/booknotes-art-of-gathering.html"
+  },
+  {
+    "title": "Towards an ethics for web3",
+    "date": "2021-11-22",
+    "dateLabel": "22 Nov '21",
+    "readTime": "5 minute read",
+    "subheading": "What are digital fair rules of engagement",
+    "slug": "towards-web3-ethics",
+    "url": "content/articles/towards-web3-ethics.html"
+  },
+  {
+    "title": "Weaving into Web3",
+    "date": "2021-10-25",
+    "dateLabel": "25 Oct '21",
+    "readTime": "5 minute read",
+    "subheading": "Web 3.0: The next step in Internet history",
+    "slug": "weaving-into-web3",
+    "url": "content/articles/weaving-into-web3.html"
+  },
+  {
+    "title": "Book Notes - So Good They Can't... (Newport, 2012)",
+    "date": "2021-10-05",
+    "dateLabel": "05 Oct '21",
+    "readTime": "5 minute read",
+    "subheading": "Newport's 4 rules to building a great career",
+    "slug": "booknotes-so-good-they-cant-ignore-you",
+    "url": "content/articles/booknotes-so-good-they-cant-ignore-you.html"
+  },
+  {
+    "title": "Book Notes - The Origins of Money (Menger, 1892)",
+    "date": "2021-09-05",
+    "dateLabel": "05 Sep '21",
+    "readTime": "5 minute read",
+    "subheading": "how money is a social construct",
+    "slug": "booknotes-origins-of-money",
+    "url": "content/articles/booknotes-origins-of-money.html"
+  },
+  {
+    "title": "Fixed on Flexible Living",
+    "date": "2021-07-26",
+    "dateLabel": "26 Jul '21",
+    "readTime": "5 minute read",
+    "subheading": "the homes are alive",
+    "slug": "fixed-on-flexible-living",
+    "url": "content/articles/fixed-on-flexible-living.html"
+  },
+  {
+    "title": "Book Notes - Show your work! (Kleon, 2014)",
+    "date": "2021-07-24",
+    "dateLabel": "24 Jul '21",
+    "readTime": "5 minute read",
+    "subheading": "Kleon's 10 tips for (creative) authenticity",
+    "slug": "booknotes-show-your-work",
+    "url": "content/articles/booknotes-show-your-work.html"
   },
   {
     "title": "Roaming the DSM-5",
