@@ -147,6 +147,15 @@
     object-fit: contain;
 }
 
+.article-body ul,
+.article-body ol {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-body li {
+  margin: 0.35rem 0;
+}
 
 
 /* <<<<<<<<<<<<<<<<<< FONT FAMILIES >>>>>>>>>>>>>>>>>> */
