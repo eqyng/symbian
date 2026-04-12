@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>symbiography</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <div class="logo"> <!--not a navigation block thus div works-->
+                <a href="homepage.html">E</a>
+            </div>
+            <nav class="main-nav-items">
+                    <h4> <a href="about-page.html">about</a></h4>
+            </nav>
+        </header>
+
+        <main class="page-main">
+    
+            <!-- HERO SECTION -->
+            <div class="hero-section">
+                <span class="heading"><h1>symbiography</h1></span>
+                <span class="subheading"><h3>essays on human-machine mapping</h3></span>
+            </div>
+    
+            <!-- LATEST ENTRY -->
+            <div class="latest-entry-container">
+                <div class="latest-entry">LATEST</div>
+                <div class="latest-entry-content">
+                    <a class="entry-title" href="..."><h2>title</h2></a>
+                    <div class="entry-metadata">
+                        <time class="entry-date" datetime="2025-03-02">date</time>
+                        <span class="entry-separator"> . </span>
+                        <span class="read-time">5 minute read</span>
+                    </div>
+                    <div class="entry-subtitle">subtitle</div>
+                </div>
+            </div>
+
+            <span class="entries-header"><h4>ENTRIES</h4></span>
+
+            <!-- ENTRIES CONTENT -->
+            <div class="entries-container"> <!--houses all the articles-->
+                <div class="entries-row" aria-live="polite"> <!--houses each article-->
+                    <article class="entries-metadata">
+                        <time datetime="entries-date">date</time>
+                        <span class="entries-separator"> . </span>
+                        <a class="entries-title" href="...">article title</a>
+                    </article>
+                    <!-- <span class="entries-subtitle"><h5>subtitle</h5></span> -->
+                </div>
+            </div>
+    
+            <!-- FOOTER -->
+            <div class="footer-quote">
+                    <h3>How do we shape technology, <br> and how does technology shape us?</h3>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2026 elisa n. all rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        (async function () {
+          const res = await fetch("data/articles.json");
+          if (!res.ok) return;
+          const articles = await res.json();
+      
+          articles.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+          const latest = articles[0];
+          const entries = articles.slice(1);
+      
+          if (latest) {
+            document.querySelector(".latest-entry-content .entry-title h2").textContent = latest.title;
+            const timeEl = document.querySelector(".latest-entry-content .entry-date");
+            timeEl.dateTime = latest.date;
+            timeEl.textContent = latest.dateLabel || latest.date;
+            document.querySelector(".latest-entry-content .read-time").textContent = latest.readTime || "";
+            document.querySelector(".latest-entry-content .entry-subtitle").textContent = latest.subheading || "";
+            const link = document.querySelector(".latest-entry-container a.entry-title");
+            if (link) link.href = latest.url;
+          }
+      
+          const list = document.querySelector(".entries-container");
+          if (list && entries.length) {
+            list.innerHTML = entries
+              .map(
+                (a) =>
+                  `<article class="entries-metadata"><time datetime="${a.date}">${a.dateLabel || a.date}</time><a href="${a.url}">${a.title}</a></article>`
+              )
+              .join("");
+          }
+        })();
+      </script>
+
+</body>
+</html>                  
