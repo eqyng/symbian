@@ -51,22 +51,22 @@
 }
 
 .entries-metadata {
-    font-family: "Sen", sans-serif;
-    font-size: 16px;
+    font-family: "Avenir Next", sans-serif;
+    font-size: 19px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 10px;
     gap: 0.5rem 1rem;
     margin: 0px;
+    color: #080914;
     background-color: yellow;
 }
-
+    
 .entries-metadata time {
     font-family: "Sometype Mono", monospace;
-    font-size: 14px;
+    font-size: 16px;
 }
-
 
 /* <<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>> */
 .footer-quote{
@@ -74,7 +74,7 @@
     background-color: green;
 }
 
-.footer {
+.footer p{
     padding-top: 50px;
     text-align: right;
     font-size: 12px;
@@ -152,7 +152,7 @@
 .article-body ol {
   margin: 0.75rem 0;
   padding-left: 1.5rem;
-  font-family: "Sometype Mono", sans-serif;
+  font-family: "Avenir Next", sans-serif;
   font-weight: 300;
   line-height: 1.8;
   font-style: normal;
@@ -161,7 +161,7 @@
 
 .article-body li {
   margin: 0.35rem 0;
-  font-family: "Sometype Mono", sans-serif;
+  font-family: "Avenir Next", sans-serif;
   font-weight: 300;
   line-height: 1.8;
   font-style: normal;
@@ -190,7 +190,7 @@ h1 { /*heading*/
 }
 
 .subheading h3 {
-    font-family: "Sometype Mono", sans-serif;
+    font-family: "Avenir Next", sans-serif;
     font-size: 30px;
     font-weight: 300;
     margin-top: 2rem;
@@ -206,15 +206,16 @@ h2 { /*heading 2*/
 }
 
 .article-body h2 {
-    font-family: "Sen", serif;
+    font-family: "Sometype Mono", sans-serif;
     font-size: 30px;
     font-weight: 500;
+    padding-top: 15px;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
 
 h3 { /*subheading*/
-    font-family: "Sen", sans-serif;
+    font-family: "Sometype Mono", sans-serif;   /*"Sen", sans-serif;*/
     font-weight: 300;
     font-style: normal;
     font-size: 25px;
@@ -223,7 +224,7 @@ h3 { /*subheading*/
 }
 
 .article-body h3 {
-    font-family: "Sen", serif;
+    font-family: "Avenir Next", sans-serif;
     font-size: 27px;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
