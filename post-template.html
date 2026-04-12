@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>symbiography</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="../../styles.css"/>
 
 </head>
 
@@ -30,15 +30,10 @@
         <main class="page-main">
             <div class="article-allcontent-container">
                 <div class="article-container">
-                    <section id="article-metadata" class="article-metadata">
-                        <div class="article-heading">
-                            <h2> {{TITLE}} </h2>
-                        </div>
-
-                        <div class="article-subheading">
-                            <h4> {{SUBHEADING}}</h4>
-                        </div>
-                    </section>
+                    <div class="hero-section">
+                        <span class="heading"><h1>{{TITLE}}</h1></span>
+                        <span class="subheading"><h3>{{SUBHEADING}}</h3></span>
+                    </div>
 
                     <section id="article-body" class="article-body">
                         <div class="article-body">
@@ -48,7 +43,7 @@
                 </div>
             
                 <section id="article-similar" class="article-similar">
-                    <div class="gh-similar-heading">
+                    <div class="similar-heading">
                         <h4> similar reads </h4>
                     </div>
                     
