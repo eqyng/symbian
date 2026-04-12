@@ -45,7 +45,7 @@
     "url": "content/articles/griefbots.html"
   },
   {
-    "title": "Book Notes - The Art of Gathering",
+    "title": "Book Notes - The Art of Gathering (Parker, 2018)",
     "date": "2022-02-15",
     "dateLabel": "15 Feb '22",
     "readTime": "5 minute read",
@@ -61,6 +61,51 @@
     "subheading": "What are digital fair rules of engagement",
     "slug": "towards-web3-ethics",
     "url": "content/articles/towards-web3-ethics.html"
+  },
+  {
+    "title": "Intergenerational dialogues",
+    "date": "2021-11-21",
+    "dateLabel": "21 Nov '21",
+    "readTime": "insert",
+    "subheading": "insert",
+    "slug": "word-word-word-word",
+    "url": "content/articles/word-word-word-word.html"
+  },
+  {
+    "title": "Thinking in the long-term",
+    "date": "2021-11-20",
+    "dateLabel": "20 Nov '21",
+    "readTime": "5 minute read",
+    "subheading": "longtermism and gratification",
+    "slug": "thinking-in-the-longterm",
+    "url": "content/articles/thinking-in-the-longterm.html"
+  },
+  {
+    "title": "The Future is Dense and Modular",
+    "date": "2021-11-18",
+    "dateLabel": "18 Nov '21",
+    "readTime": "5 minute read",
+    "subheading": "technological Darwinism wins the race",
+    "slug": "dense-and-modular-future",
+    "url": "content/articles/dense-and-modular-future.html"
+  },
+  {
+    "title": "Pseudonymity and Authenticity",
+    "date": "2021-11-16",
+    "dateLabel": "16 Nov '21",
+    "readTime": "5 minute read",
+    "subheading": "the question of authenticity",
+    "slug": "pseudonymity-and-authenticity",
+    "url": "content/articles/pseudonymity-and-authenticity.html"
+  },
+  {
+    "title": "Learning how to swim",
+    "date": "2021-10-27",
+    "dateLabel": "27 Oct '21",
+    "readTime": "5 minute read",
+    "subheading": "standing on generational shores",
+    "slug": "learning-how-to-swim",
+    "url": "content/articles/learning-how-to-swim.html"
   },
   {
     "title": "Weaving into Web3",
