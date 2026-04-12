@@ -16,8 +16,8 @@
 
 <body>
     <div class="page-container">
-        <header class="page-header">
-            <header class="page-header">
+        <header class="page-headerbar">
+            <header class="page-headerbar">
                 <div class="logo"> <!--not a navigation block thus div works-->
                     <a href="homepage.html">E</a>
                 </div>
@@ -27,78 +27,51 @@
             </header>
         </header>
 
-        <div class="gh-breadcrumb">
-            <ul>
-                <li>
-                    <span> <a href="homepage.html"> symbiography </a></span>
-                    <span>Article</span>
-                </li>
-            </ul>
+        <div class="article-breadcrumb">
+            <span> <a href="homepage.html"> symbiography </a></span>
+            <span class="breadcrumb-separator"> / </span>
+            <span>{{TITLE}}</span>
         </div>
 
-        <main class="page-main article-main">
-            <div class="gh-main-container">
-                <div class="gh-toc-container">
-                    <nav class="gh-toc"> <!-- table of contents-->
-                        <div class="gh-toc-heading">
-                            <h5> CONTENTS </h5>
-                        </div>
-                        <ul>
-                            <li><a href="#section1">What is Emotional Labour?</a></li>
-                            <li><a href="#section1">The Therapeutic Uses</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="gh-content-container">
-                    <section id="gh-article-header" class="gh-article-header">
-                        <div class="gh-a-heading">
+        <main class="article-main">
+            <div class="article-allcontent-container">
+                <div class="article-container">
+                    <section id="article-metadata" class="article-metadata">
+                        <div class="article-heading">
                             <h2> {{TITLE}} </h2>
                         </div>
 
-                        <div class="gh-a-byline">
+                        <div class="article-subheading">
                             <h4> {{SUBHEADING}}</h4>
-                        </div>
-
-                        <div class="gh-article-tiles">
-                            <a class="tag" href="tag-article.html"> <p> #technology</p> </a>
-                            <a class="tag" href="tag-article.html"> <p> #philosophy</p> </a>
-                            <a class="tag" href="tag-article.html"> <p> #art</p> </a>
                         </div>
                     </section>
 
-                    <section id="gh-article-body" class="gh-article-body">
-                        <div class="gh-body">
+                    <section id="article-body" class="article-body">
+                        <div class="article-body">
                             {{BODY_HTML}}
                         </div>
                     </section>
-
-                    <section id="gh-article-similar" class="gh-article-similar">
-                        <div class="gh-similar-heading">
-                            <h4> similar reads </h4>
-                        </div>
-                        
-                        <div class="gh-articlelist-container">
-                            <ul class="gh-article-list">
-                                <li>
-                                    <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
-                                    <span class="gh-writing-time"> 2024 · 12 | </span>
-                                    <span> <a href="#" class="gh-writing-title"> 05. Self-guaranteeing promises </a> </span>
-                                </li>
-                                <li>
-                                    <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
-                                    <span class="gh-writing-time"> 2024 · 12 | </span>
-                                    <span> <a href="#" class="gh-writing-title"> 23. What can we remove? </a> </span>
-                                </li>
-                                <li>
-                                    <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
-                                    <span class="gh-writing-time"> 2024 · 12 | </span>
-                                    <span> <a href="#" class="gh-writing-title"> 52. Another Day </a> </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
                 </div>
+            
+                <section id="article-similar" class="article-similar">
+                    <div class="gh-similar-heading">
+                        <h4> similar reads </h4>
+                    </div>
+                    
+                    <div class="similar-articles-container">
+                        <ul class="similar-articles-list">
+                            <li>
+                                <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
+                                <article class="entries-metadata">
+                                    <time datetime="entries-date">date</time>
+                                    <span class="entries-separator"> . </span>
+                                    <a class="entries-title" href="...">article title</a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            
             </div>
         </main>
 
