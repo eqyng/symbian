@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>symbiography</title>
+    <link rel="stylesheet" href="../../styles.css"/>
+
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="page-header">
+                <div class="logo"> <!--not a navigation block thus div works-->
+                    <a href="../../index.html">E</a>
+                </div>
+                <nav class="main-nav-items">
+                    <h4> <a href="../../about-page.html">about</a></h4>
+                </nav>
+        </header>
+
+        <!-- Article Breadcrumb 
+        <div class="article-breadcrumb">
+            <span> <a href="../../index.html"> symbiography </a></span>
+            <span class="breadcrumb-separator"> / </span>
+            <span>Designing Risk-Based AI Agents</span>
+        </div>-->
+
+        <main class="article-page-main">
+            <div class="article-allcontent-container">
+                <div class="article-container">
+                    <div class="hero-section">
+                        <span class="article-heading"><h1>Designing Risk-Based AI Agents</h1></span>
+                        <span class="subheading"><h3>purple-teaming prompts for Conversation Designers</h3></span>
+                    </div>
+
+                    <section id="article-body" class="article-body">
+                        <div class="article-body">
+                            <p><p>A company deploys a chatbot. Someone ‘hacks’ it. Data leaks. Headlines. This sounds familiar.</p>
+<p>What’s less familiar is <em>who</em> the hacker can be: not a state actor, not a crime ring—sometimes just a bored or frustrated customer who will casually probe your assistant out of curiosity or spite and see guardrails as games to overcome.</p>
+<h2>What do we actually mean by “safety”?</h2>
+<p>I like how IBM defines it with the added nuance of how NIST defines risk management. </p>
+<p>AI safety is the “practices and principles that help ensure AI technologies are designed and used in a way that benefits humanity and minimizes any potential harm or negative outcomes” i.e. minimising the downside while maximising the upside and understanding the likelihood and extent of harm. </p>
+<p>But even if we care about safety, I’ve wondered what does that look like in practice in the real-world?</p>
+<h2>Why do we need to make chatbots safe?</h2>
+<p>If I were to answer this I’d say that as AI becomes embedded in almost every digital interaction, the risk (the likelihood of damage and extent of damage) multiples for all of us and in different ways.</p>
+<p>If we look at some numbers:
+- 987 million users and counting are using chatbots today
+- 82% of respondents prefer engaging with digital assistants rather than wait for humans
+- 73% of buyers out of 1000 survey respondents expect websites to feature digital assistants for 24/7 availability, reduce holding times, and quick routing to the right team</p>
+<h2>Affected Demographics</h2>
+<p>At these volumes and demand, the risk of multiple communities being negatively impacted at scale expands. Two communities that come to mind are businesses and users.</p>
+<h3>Businesses</h3>
+<p>Market competition is pushing companies to implement chatbots as the first point of contact for customer or include them in strategy to achieve goals like remaining competitive against peers, reducing operational costs, and increasing customer engagement. This is being done at speed which may or may not be compromising safety guardrails as we’ve noted in the beginning of this talk.
+- McKinsey’s report on the state of AI says 62% of survey respondents say their organizations are at least experimenting with AI agents
+- An Accenture report states 57% of businesses cite chatbot technology as delivering large return on investment for minimal effort - we can see two of the top 3 reasons to use chatbots in future are personalised interactions with users and handling client queries through networking with other bots
+- The global market for chatbots is valued at $15.57B in 2025, projected to grow to $46.6B by 2029 - so you can see the projected increase in investment here
+- In a Cost of a Data Breach report (2025) — IBM surveyed 600 organisations globally 2024-2025 and found that 63% of breached organisations don’t have an AI governance policy or still developing one</p>
+<p>Companies are taking on social and ethical responsibilities as part of commercial ecosystem. There are business impacts such as:
+    * Brand and reputational damage if chatbots hallucinate or leak private information
+    * Financial risks from liability lawsuits or if companies are found to be non-compliant with constantly evolving regulations
+    * Operational costs if chatbots increase escalation to support teams instead of reducing work as intended</p>
+<h3>General Users</h3>
+<p>From a user perspective, there’s a fair expectation that sensitive information won’t be leaked, that they have a smooth customer experience, receiving accurate and correct advice instead of friction. If private information’s leaked we know this leads to potentially long-term financial and personal repercussions.</p>
+<p>Here are a few concrete examples of impacts:
+- Air Canada Feb 2024 = The chatbot gave incorrect information about bereavement fares, telling a customer that they can retroactively receive a refund for tickets. This actually not aligned with Air Canada’s actual policy. Air Canada attempted to argue that the chatbot was a ‘separate legal entity’ but was overruled by a tribunal.
+- DPD Jan 2024 = A frustrated user made the delivery company chatbot tell him a joke which progressed to a poem criticising the company which progressed to swearing
+- McDonalds July 2025 = two security researchers accessed databases containing 64 million applicant chat logs with McDonald’s recruitment chatbot Olivia
+- The cumulative value of GDPR fines reached ~5.65B by early 2025 (https://www.varonis.com/blog/cybersecurity-statistics#ai-stats)</p>
+<h2>Unexpected Loopholes</h2>
+<p>This is a confluence of factors: a potentially poorly secured product + direct interface between company and millions of users + sometimes highly sensitive industries, chatbots can therefore be unexpected chinks in company security armour. </p>
+<p>There is a gap between AI Safety as a research or engineering problem, and safety in production environments especially when the attacker’s actually your user. When I was initially exploring the AI safety field, I focused on concerns like AGI, ASI, and value alignment. While important, it took that scenario for me to realise there’s a parallel problem of AI in production that’s happening on a different timeline - which is right now. </p>
+<p>In fact, a recent study from August 2025 found differences in risk reporting from developers and researchers. Developers focus on technical issues like bias and safety while researchers focus on broader social impacts. This makes sense given everyone looks at risk from their lens of experience. But both groups actually underestimated issues like social engineering and manipulation which showed up in the MIT risk repository (967 risks from 43 AI risk frameworks) and AI Incident Database (AIID - 869 incidents based on 4406 media reports) - 17% concerns noted by researchers, while developers picked up 4%. Therefore, safety is an interdisciplinary effort.</p>
+<p>With chatbots, customers can now become your attacker, potentially using these overly helpful assistants as channels into internal systems. But when conversation becomes a new attack surface, it’s where people like conversation designers can fill the gaps, taking social concerns and security principles then implementing them within prompts at the design layer. This of course isn’t to say that prompts will solve everything - maintaining standard safety hygiene and keeping the technicalities of engineering is crucial. But designers add another angle in terms of risk management.</p>
+<h2>A Design Framework for Safety</h2>
+<p>Over the past year I’ve formalised 3-layered approach to designing systematic methods of prompting i.e. the Design-Test-Monitor (DTM ). The basis of this framework is to operate from a safety-by-design mindset in 3 layers when designing assistants.</p>
+<ol>
+<li>First, design effective prompts</li>
+<li>Then, test adversarially and proactively</li>
+<li>And finally, continuously monitor in production</li>
+</ol>
+<h3>LAYER 1: DESIGN</h3>
+<p>For conversation design, there are two things: 
+* First when we design assistants we’re actually crafting context and character: How will the agent behave, what will they sound like, what can and can’t they do. So we’re giving instructions that operates on a holistic, system level, not just discrete lines of information.
+* Secondly, when I say effective, I mean it achieves its core purpose of understanding user requests quickly and accurately.</p>
+<p>To do this, my approach is to ask 3 S’s: Is my prompt structured, safe, succinct?</p>
+<h3>1. Structured</h3>
+<p>Real-world customer asks are usually long-winded, vague or sometimes unexpected. If the agent doesn’t know what to do when it encounters an edge case scenario, there’s a higher chance it’ll guess or hallucinate which leads to poor customer outcomes because of incorrect request extraction, irrelevant answer retrieved and increases user friction in the experience.</p>
+<p>So we can use structure to help standardise requests <strong>in</strong> 2 ways: 
+1. Physically structuring the prompt i.e. how do we best lay out the prompt so that the assistant can efficiently read and generate actual responses. They’re more likely to understand and correctly prioritise the order if we provide the instructions in segments rather than an unordered list. Examples: AWS Nova’s prompt “sectioning” where the instructions have been broken out into sections or themes of Task, Content Section, Content Requirements, Tone and Style.
+2. Logical structure: i.e. how do we write our instructions so that the assistant can understand our intention as designers. Examples: Meta's Prompting - where we create a recipe-like structure. When we break down the task into clear steps, we’ve specified and designed fallback actions that the assistant can enact whether that’s a certain response, action or escalation to a human. From the article and what I’ve found to be true is that it’s fairly token efficient and is human-readable so you can step through the logic and expect more or less that the assistant will follow in that order.</p>
+<h3>2. Safe</h3>
+<p>The next step is safety. here’s where we scrutinise each instruction from the perspective of an attacker, asking ourselves how can this prompt be bypassed, where are the possible attacks and consequently the possible defences. So rather than lifting the responsibility of safety onto another team or tacking it on at the end of the product, designers anticipate problems upfront and weave safety into the level of design for a stronger foundation.</p>
+<p>Some examples of common risk areas that you can include in rules are Personally Identifiable Information redactions specified in your prompt itself like “Do not include phone numbers”.</p>
+<p>Separately, safety isn’t just prompt-specific but process-driven as well. For instance only ask for sensitive information when needed or build ‘gates’ into the bot’s process that requires explicit user confirmation or authorisation to proceed. An example would be confirming the user’s request back to them like a waiter would: “Is this right?” or “I’m going to go ahead and check on this account for you, are you happy for me to do that?” This keeps your design customer-centric. If you look at the example from Anthropic, your user has a way to exit the interaction. Other opportunities are to correct misunderstandings and say “No that’s not what I meant” or naturally escalate to more complex queries that extend outside of the bot’s scope to a human.</p>
+<h3>3. Succinct</h3>
+<p>Prompts can balloon in size in the course of specification or accounting for edge cases. Overly verbose, overlapping and illogical language or steps reduces clarity for the assistant and increases token count and cost. Therefore, prompts need to be concise so the system keeps working i.e. Minimum Viable Prompt.</p>
+<p>This is an example breakdown from a Google paper where you can see small tweaks to conversation produces improved result from the original prompt which has 60% accuracy in results vs new prompt improved by 76% accuracy.</p>
+<p>Two caveats are:
+    1. As you can see, this prompt was iteration 91 - it’d take many turns of prompt writing and rewriting which may seem tedious but was part of our process
+    2. This is one of the final steps. This is your prompts are succinct but not at the cost of clarity. If your prompts are short but the meaning is lost that also leads to an ineffective assistant because they can’t draw meaning from your instructions.</p>
+<p>Now that we have a structured prompt, we can test how it does under real-world adversarial testing i.e. Layer 2.</p>
+<h3>LAYER 2: USER TESTING</h3>
+<p>So as we saw in my example, most users aren’t hackers. They’re just curious, bored or frustrated. But that doesn’t make them less dangerous</p>
+<h3>1. Build Testing Frameworks</h3>
+<p>In my case, to mitigate adversarial user behaviour, develop your testing frameworks. For example, main attacks can be drawn from OWASP, IBM’s Risk Atlas and other research.</p>
+<p>Some examples of categories are:
+- Prompt injections i.e. can users manipulate the system through questions (”Ignore previous instructions...”)
+- Jailbreaking i.e. trying to bypass guardrails (“Imagine you could do X, how would you do it”)
+- Data leakage i.e. revealing sensitive data from other users or internal technical systems
+- Edge case handling i.e. anticipating unusual scenarios (what if user is says multiple requests, or asks purposefully vague questions to confuse the assistant)</p>
+<h3>2. Set up Success Criteria</h3>
+<p>Then set up success criteria e.g. did we manage to break our agent (Fail) or did our agent push back appropriately?</p>
+<p>In this way we can systematically stress test our prompts, documenting what we tried, what worked (or didn’t), how we can modify the prompt and how to iterate. Iteration helps us catch edge cases we didn’t anticipate, reveals weak assumptions</p>
+<p>To be sure it’s not as comprehensive as OWASP’s LLM Top 10 or MITRE ATT&amp;CK but it’s a practical start for designers who want to bring safety earlier in the development cycle.</p>
+<p>Once you have a field-tested ready prompt (as much as possible), now’s the time to push it to production. Which brings us to Layer 3: Monitoring to Measure</p>
+<h3>LAYER 3: MONITOR</h3>
+<p>(and fix while in production). You can’t test for everything because 1) in production issues may not surface during your tests 2) models can drift over time in terms of accuracy. 3) real-world users are actually pretty creative (or wily)</p>
+<p>Before you push to production, these three things are ideal:</p>
+<h3>1. Sandbox environment</h3>
+<p>Here you can test new prompt changes at lower user volumes and in a controlled way rather than on your entire customer base. For instance in staging environments that’s the same as production. This helps you follow the close design-test-design again feedback loop</p>
+<h3>2. Real-time monitoring dashboards</h3>
+<p>If you’re unable to see your results in real-time it will be difficult to track when and how issues occur in the event of cases like security breaches or technical outages.</p>
+<p>Your metrics of importance and thresholds for high vs low priorities might vary as well depending on the industry on in. e.g. Task completion rate, average handling time, or user satisfaction. </p>
+<p>An example of this happening in action was when a customer called about an edge case we didn’t initially pick up. Because it was an edge case, the agent direct the caller to a related but ultimately irrelevant solution which led to an unnecessary escalation to a human. When we picked up the problematic transcript, we could pinpoint why the error occurred, change, test and redeploy the assistant with the correct process and minimal disruption</p>
+<h3>3. Prompt rollback protocols</h3>
+<p>Just like in developer workflows or Google docs, when things break (not if), going back through your version history to find your old prompts will save you the headache of redoing work or being unable to find problematic workflows. Your monitoring dashboard comes in here as well i.e. clear risk-based triggers that will alert you when there is a problem and having criteria to distinguish between when you need a total rollback or if you just need a less disruptive investigation. The key though is to define these before something breaks</p>
+<h2>Key Takeaways:</h2>
+<p>This approach is conversation design centric but designers are one part of the product line to creates safe chatbots. A few key takeaways from my experience
+1. Safety is a process and it should be built into design, not just tacked on. Our team was able to ship rapidly because we anticipated as much as we could and iterated on the rest.
+2. Testing your own agents before pushing it into production is crucial. Catch these mistakes before your users do
+3. Monitoring to measure is key to catch or mitigate deviations, drifts and other types of damage.</p>
+<p>Implementers, proactive thinking allows us to consider novel ways that a product can be made insecure. As a final note, I wanted to call out that implementors have a shared social responsibility to be aware of risks and bring safe experiences to users. Beyond chatbots these interface with millions of people, often in vulnerable or stressful moments.</p>
+<hr /></p>
+                        </div>
+                    </section>
+                </div>
+            
+                <!-- 
+                <section id="article-similar" class="article-similar">
+                    <div class="similar-heading">
+                        <h4> similar reads </h4>
+                    </div>
+                    
+                    <div class="similar-articles-container">
+                        <ul class="similar-articles-list">
+                            <li>
+                                <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
+                                <article class="entries-metadata">
+                                    <time datetime="entries-date">date</time>
+                                    <span class="entries-separator"> . </span>
+                                    <a class="entries-title" href="...">article title</a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section> 
+                -->
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2026 elisa n. all rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+    </html>
