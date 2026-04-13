@@ -4,7 +4,7 @@
     "date": "2025-09-09",
     "dateLabel": "09 Sep '25",
     "readTime": "5 minute read",
-    "subheading": "Where software glamour meets military might",
+    "subheading": "where software glamour meets military might",
     "slug": "moral-greyzone-militarymarketing",
     "url": "content/articles/moral-greyzone-militarymarketing.html"
   },
@@ -13,7 +13,7 @@
     "date": "2025-09-06",
     "dateLabel": "06 Sep '25",
     "readTime": "5 minute read",
-    "subheading": "On Inductive, Deductive & Abductive Reasoning",
+    "subheading": "on Inductive, Deductive & Abductive Reasoning",
     "slug": "critical-thinking-explained",
     "url": "content/articles/critical-thinking-explained.html"
   },
@@ -22,7 +22,7 @@
     "date": "2024-12-14",
     "dateLabel": "14 Dec '24",
     "readTime": "5 minute read",
-    "subheading": "How much compute does emotional processing take?",
+    "subheading": "how much compute does emotional processing need?",
     "slug": "rise-of-chatgptherapy",
     "url": "content/articles/rise-of-chatgptherapy.html"
   },
@@ -31,7 +31,7 @@
     "date": "2024-10-05",
     "dateLabel": "05 Oct '24",
     "readTime": "5 minute read",
-    "subheading": "Using Freud's Theory of Personality",
+    "subheading": "using Freud's Theory of Personality",
     "slug": "psychoanalysis-ihavenomouth-1975",
     "url": "content/articles/psychoanalysis-ihavenomouth-1975.html"
   },
@@ -40,7 +40,7 @@
     "date": "2024-10-03",
     "dateLabel": "03 Oct '24",
     "readTime": "5 minute read",
-    "subheading": "When technology introduces immortality",
+    "subheading": "when technology introduces immortality",
     "slug": "griefbots",
     "url": "content/articles/griefbots.html"
   },
@@ -49,7 +49,7 @@
     "date": "2022-02-15",
     "dateLabel": "15 Feb '22",
     "readTime": "5 minute read",
-    "subheading": "Tips on gathering well",
+    "subheading": "tips on gathering well",
     "slug": "booknotes-art-of-gathering",
     "url": "content/articles/booknotes-art-of-gathering.html"
   },
@@ -63,7 +63,7 @@
     "url": "content/articles/towards-web3-ethics.html"
   },
   {
-    "title": "Intergenerational dialogues",
+    "title": "Intergenerational Dialogues",
     "date": "2021-11-21",
     "dateLabel": "21 Nov '21",
     "readTime": "insert",
@@ -99,7 +99,7 @@
     "url": "content/articles/pseudonymity-and-authenticity.html"
   },
   {
-    "title": "Learning how to swim",
+    "title": "Learning How to Swim",
     "date": "2021-10-27",
     "dateLabel": "27 Oct '21",
     "readTime": "5 minute read",
@@ -112,7 +112,7 @@
     "date": "2021-10-25",
     "dateLabel": "25 Oct '21",
     "readTime": "5 minute read",
-    "subheading": "Web 3.0: The next step in Internet history",
+    "subheading": "Web 3.0: the next step in Internet history",
     "slug": "weaving-into-web3",
     "url": "content/articles/weaving-into-web3.html"
   },
@@ -130,7 +130,7 @@
     "date": "2021-09-05",
     "dateLabel": "05 Sep '21",
     "readTime": "5 minute read",
-    "subheading": "how money is a social construct",
+    "subheading": "how money really is a social construct",
     "slug": "booknotes-origins-of-money",
     "url": "content/articles/booknotes-origins-of-money.html"
   },
@@ -157,16 +157,16 @@
     "date": "2021-07-21",
     "dateLabel": "21 Jul '21",
     "readTime": "8 minute read",
-    "subheading": "Proposing a knowledge management system for the DSM",
+    "subheading": "proposing a knowledge management system for the DSM",
     "slug": "roaming-the-dsm5",
     "url": "content/articles/roaming-the-dsm5.html"
   },
   {
-    "title": "The future through lenses",
+    "title": "The Future through Lenses",
     "date": "2021-07-17",
     "dateLabel": "17 Jul '21",
     "readTime": "5 minute read",
-    "subheading": "Complex challenges require complex solutions",
+    "subheading": "complex challenges require complex solutions",
     "slug": "the-future-through-lenses",
     "url": "content/articles/the-future-through-lenses.html"
   }
