@@ -180,6 +180,27 @@ body {
     color: #808080;
 }
 
+.article-body blockquote {
+    margin: 1.75rem 0;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    border-left: 4px solid #d36008;
+    background: rgba(211, 96, 8, 0.06);
+    font-style: italic;
+    color: #2a2a2a;
+  }
+  
+  .article-body blockquote p {
+    margin: 0.6rem 0;
+  }
+  
+  .article-body blockquote p:first-child {
+    margin-top: 0;
+  }
+  
+  .article-body blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
 .article-body img, .article-body video{
     max-width: 100%;
     width: auto;
