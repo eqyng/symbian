@@ -155,13 +155,17 @@ body {
     padding-bottom: 50px;
 }
 
+.article-hero-section {
+    text-align: center;
+}
+
 .article-hero-section .subheading h3 {
     margin:0;
 }
 
 .article-hero-section .entry-date {
     font-family: "Sometype Mono", monospace;
-    font-size: 35px;
+    font-size: 12px;
     color: #080914;
     padding-top: 10px;
     padding-bottom: 50px;
