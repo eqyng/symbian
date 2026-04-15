@@ -99,10 +99,20 @@
 <p>To do this, my approach is to ask 3 S’s: Is my prompt structured, safe, succinct?</p>
 <h3>1. Structured</h3>
 <p>Real-world customer asks are usually long-winded, vague or sometimes unexpected. If the agent doesn’t know what to do when it encounters an edge case scenario, there’s a higher chance it’ll guess or hallucinate which leads to poor customer outcomes because of incorrect request extraction, irrelevant answer retrieved and increases user friction in the experience.</p>
-<p>So we can use structure to help standardise requests <strong>in</strong> 2 ways: </p>
+<p>So we can use structure to help standardise requests in 2 ways: </p>
 <ol>
-<li>Physically structuring the prompt i.e. how do we best lay out the prompt so that the assistant can efficiently read and generate actual responses. They’re more likely to understand and correctly prioritise the order if we provide the instructions in segments rather than an unordered list. Examples: AWS Nova’s prompt “sectioning” where the instructions have been broken out into sections or themes of Task, Content Section, Content Requirements, Tone and Style.</li>
-<li>Logical structure: i.e. how do we write our instructions so that the assistant can understand our intention as designers. Examples: Meta's Prompting - where we create a recipe-like structure. When we break down the task into clear steps, we’ve specified and designed fallback actions that the assistant can enact whether that’s a certain response, action or escalation to a human. From the article and what I’ve found to be true is that it’s fairly token efficient and is human-readable so you can step through the logic and expect more or less that the assistant will follow in that order.</li>
+<li>Physically structuring the prompt<ul>
+<li>i.e. how do we best lay out the prompt so that the assistant can efficiently read and generate actual responses?</li>
+<li>They’re more likely to understand and correctly prioritise the order if we provide the instructions in segments rather than an unordered list. </li>
+<li>Examples: AWS Nova’s prompt “sectioning” where the instructions have been broken out into sections or themes of Task, Content Section, Content Requirements, Tone and Style.</li>
+</ul>
+</li>
+<li>Logical structure:<ul>
+<li>ie. how do we write our instructions so that the assistant can understand our intention as designers? </li>
+<li>When we break down the task into clear steps, we’ve specified and designed fallback actions that the assistant can enact whether that’s a certain response, action or escalation to a human. From the article and what I’ve found to be true is that it’s fairly token efficient and is human-readable so you can step through the logic and expect more or less that the assistant will follow in that order.</li>
+<li>Examples: Meta's Prompting - where we create a recipe-like structure. </li>
+</ul>
+</li>
 </ol>
 <h3>2. Safe</h3>
 <p>The next step is safety. here’s where we scrutinise each instruction from the perspective of an attacker, asking ourselves how can this prompt be bypassed, where are the possible attacks and consequently the possible defences. So rather than lifting the responsibility of safety onto another team or tacking it on at the end of the product, designers anticipate problems upfront and weave safety into the level of design for a stronger foundation.</p>
