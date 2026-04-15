@@ -151,8 +151,14 @@ body {
 }
 
 .hero-section .subheading h3 {
-    padding-bottom: 50px;
     margin:0;
+}
+
+.hero-section .entry-date {
+    font-family: "Sometype Mono", monospace;
+    font-size: 16px;
+    color: #080914;
+    padding-bottom: 50px;
 }
 
 .article-breadcrumb {
