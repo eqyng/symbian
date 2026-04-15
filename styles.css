@@ -152,12 +152,18 @@ body {
 
 .hero-section .subheading h3 {
     margin:0;
+    padding-bottom: 50px;
 }
 
-.hero-section .entry-date {
+.article-hero-section .subheading h3 {
+    margin:0;
+}
+
+.article-hero-section .entry-date {
     font-family: "Sometype Mono", monospace;
-    font-size: 16px;
+    font-size: 25px;
     color: #080914;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -174,6 +180,7 @@ body {
     height: auto;
     display: block;
     object-fit: contain;
+    justify-content: center;
 }
 
 .article-body ul,
