@@ -83,7 +83,6 @@
             const timeEl = document.querySelector(".latest-entry-content .entry-date");
             timeEl.dateTime = latest.date;
             timeEl.textContent = latest.dateLabel || latest.date;
-            document.querySelector(".latest-entry-content .read-time").textContent = latest.readTime || "";
             document.querySelector(".latest-entry-content .entry-subtitle").textContent = latest.subheading || "";
             const link = document.querySelector(".latest-entry-container a.entry-title");
             if (link) link.href = latest.url;
