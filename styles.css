@@ -21,16 +21,15 @@
     font-family: "Abhaya Libre ExtraBold", serif;
     font-weight: 300;
     font-size: 14px;
-    color: #080914;
 }
 
-.entry-body a:link,
-.entry-body a:hover,
-.entry-body a:active {
+.latest-entry-content a:link,
+.latest-entry-content a:hover,
+.latest-entry-content a:active {
   color: #D36008;
 }
 
-.entry-body a:visited {
+.latest-entry-content a:visited {
     color: #542684;
 }
 
