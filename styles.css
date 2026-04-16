@@ -72,11 +72,12 @@
 .entries-metadata {
     font-family: "Avenir Next", sans-serif;
     font-size: 19px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: baseline;
     padding-top: 10px;
-    gap: 0.5rem 1rem;
     margin: 0px;
     color: #080914;
 }
