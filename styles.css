@@ -55,14 +55,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    padding-top: 10px;
-    padding-bottom: 10px;
     gap: 0.5rem 1rem;
     margin: 0px;
 }
 
 .entry-subtitle h5{
-    padding-top: 5px;
     margin: 0px;
 }
 
