@@ -321,6 +321,17 @@ p { /*article body*/
 
 
 /* <<<<<<<<<<<<<<<<<< LINKS >>>>>>>>>>>>>>>>>> */
+.article-body a:link,
+.article-body a:hover,
+.article-body a:active {
+  color: #D36008;
+}
+
+.article-body a:visited {
+    color: #542684;
+}
+
+
 a:link {
     color: #080914;
     text-decoration: none;
@@ -328,7 +339,7 @@ a:link {
 }
 
 a:visited {
-    color: #080914;
+    color: #542684;
 }
 
 a:hover {
@@ -337,7 +348,6 @@ a:hover {
 
 a:active {
     color: #D36008;
-    font-weight: 700;
 }
 
 .logo a {
