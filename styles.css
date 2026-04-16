@@ -1,7 +1,6 @@
 /* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
 .latest-entry-container {
     margin: 0;
-    padding-bottom: 20px;
 }
 
 .latest-entry {
@@ -13,7 +12,6 @@
 }
 
 .latest-entry-content h5{
-    padding-bottom: 8px;
     margin: 0px;
 }
 
