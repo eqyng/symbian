@@ -181,7 +181,7 @@ body {
 }
 
 .article-body blockquote {
-    margin: 1.75rem 0;
+    margin: 1.75rem auto;
     padding: 1rem 1.25rem 1rem 1.25rem;
     max-width: 500px;
     border-left: 4px solid #d36008;
