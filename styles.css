@@ -69,8 +69,8 @@
     font-family: "Avenir Next", sans-serif;
     font-size: 19px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.1rem;
+    grid-template-columns: 9ch 1fr;
+    column-gap: 0.8rem;
     flex-wrap: wrap;
     align-items: baseline;
     padding-top: 10px;
