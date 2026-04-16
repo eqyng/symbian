@@ -24,6 +24,16 @@
     color: #080914;
 }
 
+.entry-body a:link,
+.entry-body a:hover,
+.entry-body a:active {
+  color: #D36008;
+}
+
+.entry-body a:visited {
+    color: #542684;
+}
+
 .entry-metadata {
     font-family: "Sometype Mono", monospace;
     font-size: 16px;
