@@ -5,7 +5,7 @@
 
 .latest-entry { /*LATEST title*/
     font-family: "Sometype Mono", monospace;
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 300;
     margin: 0px;
     color: #080914;
@@ -14,7 +14,7 @@
 .latest-entry-content{ /*LATEST article header*/
     font-family: "Abhaya Libre ExtraBold", serif;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 25px;
     margin: 0px;
 }
 
