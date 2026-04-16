@@ -70,7 +70,7 @@
     font-size: 19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0.5rem;
+    column-gap: 0.1rem;
     flex-wrap: wrap;
     align-items: baseline;
     padding-top: 10px;
@@ -161,7 +161,7 @@ body {
 
 .article-hero-section .subheading h3 {
     margin:0;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 .article-hero-section .entry-date {
