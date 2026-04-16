@@ -166,11 +166,11 @@ body {
 
 .article-hero-section .entry-date {
     font-family: "Sometype Mono", monospace;
-    font-size: 35px;
+    font-size: 25px;
     color: #080914;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .article-breadcrumb {
