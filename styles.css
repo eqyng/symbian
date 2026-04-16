@@ -183,6 +183,7 @@ body {
 .article-body blockquote {
     margin: 1.75rem 0;
     padding: 1rem 1.25rem 1rem 1.25rem;
+    max-width: 800px;
     border-left: 4px solid #d36008;
     background: rgba(211, 96, 8, 0.06);
     font-style: italic;
