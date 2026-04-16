@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.latest-entry {
+.latest-entry { /*LATEST title*/
     font-family: "Sometype Mono", monospace;
     font-size: 20px;
     font-weight: 300;
@@ -11,31 +11,19 @@
     color: #080914;
 }
 
-.latest-entry-content h5{
-    margin: 0px;
-}
-
-.latest-entry-content{
+.latest-entry-content{ /*LATEST article header*/
     font-family: "Abhaya Libre ExtraBold", serif;
     font-weight: 300;
     font-size: 14px;
+    margin: 0px;
 }
 
-.latest-entry-content .entry-title a:link,
-.latest-entry-content .entry-title a:hover,
-.latest-entry-content .entry-title a:active {
+.entry-title a:link,
+.entry-title a:hover {
   color: #D36008;
 }
 
-.latest-entry-content .entry-title a:visited {
-    color: #542684;
-}
-.latest-entry-content a:hover,
-.latest-entry-content a:active {
-  color: #D36008;
-}
-
-.latest-entry-content a:visited {
+.entry-title a:visited {
     color: #542684;
 }
 
