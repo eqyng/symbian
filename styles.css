@@ -65,16 +65,12 @@
     margin: 0px;
 }
 
-.entries-row {
-
-}
-
 .entries-metadata {
     font-family: "Avenir Next", sans-serif;
     font-size: 19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1.5rem;
+    column-gap: 0.5rem;
     flex-wrap: wrap;
     align-items: baseline;
     padding-top: 10px;
@@ -133,11 +129,6 @@ body {
     padding-right: 100px;
 }
 
-.article-page-main {
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
 .page-section {
     padding-top: 10px;
     padding-bottom: 100px;
@@ -156,6 +147,13 @@ body {
     padding-bottom: 50px;
 }
 
+/* <<<<<<<<<<<<<<<<<< ARTICLE >>>>>>>>>>>>>>>>>> */
+
+.article-page-main {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
 .article-hero-section {
     text-align: center;
     margin:0;
@@ -163,7 +161,7 @@ body {
 
 .article-hero-section .subheading h3 {
     margin:0;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .article-hero-section .entry-date {
