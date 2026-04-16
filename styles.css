@@ -161,7 +161,7 @@ body {
 
 .article-hero-section .subheading h3 {
     margin:0;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .article-hero-section .entry-date {
@@ -169,8 +169,7 @@ body {
     font-size: 25px;
     color: #080914;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .article-breadcrumb {
