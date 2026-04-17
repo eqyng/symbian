@@ -1,3 +1,12 @@
+.home-separator{
+    height: 2px;
+    background-color: #4C8A14;
+    border: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
 /* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
 .latest-entry-container {
     margin: 0;
