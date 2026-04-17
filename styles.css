@@ -43,11 +43,9 @@
 .entry-metadata {
     font-family: "Sometype Mono", monospace;
     font-size: 16px;
-    display: grid;
-    grid-template-columns: 9ch 1fr; /* left: date width, right: flexible */
-    column-gap: 0.5rem;               /* same idea as your entries list */
-    align-items: start;               /* aligns date to top */
+    display: grid;             /* aligns date to top */
     flex-wrap: wrap;
+    align-items: baseline;
     gap: 0.5rem 1rem;
     margin: 0px;
 }
@@ -59,7 +57,9 @@
     /*flex-wrap: wrap;*/
     flex: 1 1 auto;
     min-width: 0;
-    align-items: baseline;
+    grid-template-columns: 9ch 1fr; /* left: date width, right: flexible */
+    column-gap: 0.5rem;               /* same idea as your entries list */
+    align-items: start;  
     gap: 0.5rem 1rem;
     padding-top: 8px;
     margin: 0px;
