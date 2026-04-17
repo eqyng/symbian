@@ -42,10 +42,10 @@
 
 .entry-metadata {
     font-family: "Sometype Mono", monospace;
+    align-items: baseline;
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     gap: 0.5rem 1rem;
     margin: 0px;
 }
@@ -54,7 +54,9 @@
     font-family: "Avenir Next", sans-serif;
     font-size: 19px;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex: 1 1 auto;
+    min-width: 0;
     align-items: baseline;
     gap: 0.5rem 1rem;
     padding-top: 8px;
