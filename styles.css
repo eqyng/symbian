@@ -40,6 +40,30 @@
     transition: background-color 0.2s ease, border-color 0.2s ease;
   }
 
+.latest-entry-content:hover {
+    border-color: #D36008;
+    background: rgba(211, 96, 8, 0.06);
+}
+
+.latest-entry-content a:link,
+.latest-entry-content a:hover {
+  color: #D36008;
+}
+
+.latest-entry-content a:visited {
+    color: #9B4C12;
+}
+
+.latest-entry-content { 
+    display: block; 
+    text-decoration: none; 
+    color: inherit; }
+
+.latest-entry-content:focus-visible {
+    outline: 2px solid #D36008;
+    outline-offset: 3px;
+  }
+
 .entry-metadata {
     font-family: "Sometype Mono", monospace;
     font-size: 16px;
@@ -390,16 +414,3 @@ a:active {
     color: #D36008;
 }
 
-.latest-entry-content:hover {
-    border-color: #D36008;
-    background: rgba(211, 96, 8, 0.06);
-  }
-
-.entry-title a:link,
-.entry-title a:hover {
-  color: #D36008;
-}
-
-.entry-title a:visited {
-    color: #9B4C12;
-}
