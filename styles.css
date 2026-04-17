@@ -12,6 +12,7 @@
 /* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
 .latest-entry-container {
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .latest-entry { /*LATEST title*/
