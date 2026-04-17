@@ -1,12 +1,12 @@
 .home-separator{
     height: 2px;
-    background-color: #4C8A14;
+    background-color: #D36008;
     border: 0;
     width: 50%;
     /*max-width: 420px;*/
     margin: 1.5rem auto;
     margin-bottom: 5rem;
-    opacity: 0.85;
+    opacity: 0.7;
 }
 
 /* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
@@ -28,7 +28,7 @@
     font-family: "Abhaya Libre ExtraBold", serif;
     font-weight: 300;
     font-size: 23px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin: 0px;
 }
 
@@ -353,7 +353,7 @@ p { /*article body*/
 }
 
 .article-body a:visited {
-    color: #542684;
+    color: #9B4C12;
 }
 
 
