@@ -31,13 +31,13 @@
             <!-- LATEST ENTRY -->
             <div class="latest-entry-container">
                 <div class="latest-entry">LATEST</div>
-                <div class="latest-entry-content">
-                    <a class="entry-title" href="...">title</a>
+                <a class="latest-entry-content" href="...">
+                    <h2 class="entry-title">title</h2>
                     <div class="entry-metadata">
                         <time class="entry-date" datetime="2025-03-02">date</time>
                         <div class="entry-subtitle">subtitle</div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <span class="entries-header"><h4>ENTRIES</h4></span>
@@ -85,7 +85,7 @@
             timeEl.dateTime = latest.date;
             timeEl.textContent = latest.dateLabel || latest.date;
             document.querySelector(".latest-entry-content .entry-subtitle").textContent = latest.subheading || "";
-            const link = document.querySelector(".latest-entry-container a.entry-title");
+            const link = document.querySelector(".latest-entry-container a.latest-entry-content");
             if (link) link.href = latest.url;
           }
       
