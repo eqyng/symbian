@@ -258,7 +258,7 @@ body {
   .article-body hr::before {
     content: "* * *";
     letter-spacing: 0.35em;
-    color: #080914;
+    color: #4C8A14;
     font-family: "Sometype Mono", monospace;
   }
 
