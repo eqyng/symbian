@@ -249,6 +249,19 @@ body {
   font-size: 20px;
 }
 
+.article-body hr {
+    border: 0;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .article-body hr::before {
+    content: "* * *";
+    letter-spacing: 0.35em;
+    color: #080914;
+    font-family: "Sometype Mono", monospace;
+  }
+
 /* <<<<<<<<<<<<<<<<<< FONT FAMILIES >>>>>>>>>>>>>>>>>> */
 
 h1 { /*heading*/
