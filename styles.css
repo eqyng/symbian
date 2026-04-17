@@ -71,6 +71,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0.5rem 1rem;
+    padding-top: 8px;
     margin: 0px;
 }
 
