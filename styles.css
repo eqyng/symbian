@@ -81,7 +81,7 @@
     font-size: 19px;
     min-width: 0; /* left: date width, right: flexible */        
     align-items: start;  
-    padding-top: 10px;
+    padding-top: 8px;
     margin: 0px;
 }
 
