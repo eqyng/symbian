@@ -44,7 +44,7 @@
     font-family: "Sometype Mono", monospace;
     font-size: 16px;
     display: grid;             /* aligns date to top */
-    grid-template-columns: 9ch 1fr;
+    grid-template-columns: 10ch 1fr;
     column-gap: 0.5rem;  
     flex-wrap: wrap;
     align-items: baseline;
@@ -55,11 +55,8 @@
 .entry-subtitle {
     font-family: "Avenir Next", sans-serif;
     font-size: 19px;
-    /*flex-wrap: wrap;*/
-    flex: 1 1 auto;
     min-width: 0; /* left: date width, right: flexible */        
     align-items: start;  
-    gap: 0.5rem 1rem;
     padding-top: 8px;
     margin: 0px;
 }
