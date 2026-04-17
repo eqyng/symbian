@@ -21,7 +21,7 @@
     font-weight: 300;
     margin: 0px;
     padding-bottom: 10px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
 }
 
 .latest-entry-content{ /*LATEST article header*/
@@ -74,7 +74,7 @@
     font-weight: 300;
     padding-top: 25px;
     padding-bottom: 10px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     margin: 0px;
 }
 
