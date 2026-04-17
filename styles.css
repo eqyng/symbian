@@ -1,8 +1,8 @@
 .home-separator{
-    height: 1px;
+    height: 1.5px;
     background-color: #D36008;
     border: 0;
-    width: 50%;
+    width: 60%;
     /*max-width: 420px;*/
     margin: 1.5rem auto;
     margin-bottom: 5rem;
