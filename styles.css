@@ -96,8 +96,9 @@
 }
 
 /* <<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>> */
-.footer-quote{
+.footer-quote h3{
     text-align: center;
+    font-weight: 300;
 }
 
 .footer p{
@@ -111,6 +112,9 @@
     text-align: center;
 }
 
+.about-content h4{
+    font-weight: 300;
+}
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
