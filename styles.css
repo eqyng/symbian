@@ -17,7 +17,7 @@
 
 .latest-entry { /*LATEST title*/
     font-family: "Sometype Mono", monospace;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0px;
     padding-bottom: 10px;
@@ -39,20 +39,6 @@
     background: transparent;
     transition: background-color 0.2s ease, border-color 0.2s ease;
   }
-
-  .latest-entry-content:hover {
-    border-color: #D36008;
-    background: rgba(211, 96, 8, 0.06);
-  }
-
-.entry-title a:link,
-.entry-title a:hover {
-  color: #D36008;
-}
-
-.entry-title a:visited {
-    color: #542684;
-}
 
 .entry-metadata {
     font-family: "Sometype Mono", monospace;
@@ -382,4 +368,18 @@ a:active {
     font-style: normal;
     font-size: 55px;
     color: #D36008;
+}
+
+.latest-entry-content:hover {
+    border-color: #D36008;
+    background: rgba(211, 96, 8, 0.06);
+  }
+
+.entry-title a:link,
+.entry-title a:hover {
+  color: #D36008;
+}
+
+.entry-title a:visited {
+    color: #9B4C12;
 }
