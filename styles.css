@@ -1,12 +1,12 @@
 .home-separator{
-    height: 2px;
+    height: 1px;
     background-color: #D36008;
     border: 0;
     width: 50%;
     /*max-width: 420px;*/
     margin: 1.5rem auto;
     margin-bottom: 5rem;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* <<<<<<<<<<<<<<<<<< LATEST ENTRY >>>>>>>>>>>>>>>>>> */
