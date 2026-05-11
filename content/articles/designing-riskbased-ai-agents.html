@@ -43,31 +43,32 @@
 <p>What’s less familiar is <em>who</em> the hacker can be: not a state actor, not a crime ring—sometimes just a bored or frustrated customer who will casually probe your assistant out of curiosity or spite and see guardrails as games to overcome.</p>
 <h2>What do we actually mean by “safety”?</h2>
 <p>I like how IBM defines it with the added nuance of how NIST defines risk management. </p>
+<blockquote>
 <p>AI safety is the “practices and principles that help ensure AI technologies are designed and used in a way that benefits humanity and minimizes any potential harm or negative outcomes” i.e. minimising the downside while maximising the upside and understanding the likelihood and extent of harm. </p>
-<p>But even if we care about safety, I’ve wondered what does that look like in practice in the real-world?</p>
+</blockquote>
+<p>But even if we care about safety, what does that look like in practice in the real-world?</p>
 <h2>Why do we need to make chatbots safe?</h2>
-<p>If I were to answer this I’d say that as AI becomes embedded in almost every digital interaction, the risk (the likelihood of damage and extent of damage) multiples for all of us and in different ways.</p>
-<p>If we look at some numbers:</p>
+<p>As AI becomes embedded in almost every digital interaction, the risk (i.e. the likelihood of damage and extent of damage) multiples for all of us and in different ways. For example:</p>
 <ul>
 <li>987 million users and counting are using chatbots today</li>
+<li>The global market for chatbots is valued at $15.57B in 2025, projected to grow to $46.6B by 2029.</li>
 <li>82% of respondents prefer engaging with digital assistants rather than wait for humans</li>
 <li>73% of buyers out of 1000 survey respondents expect websites to feature digital assistants for 24/7 availability, reduce holding times, and quick routing to the right team</li>
 </ul>
 <h2>Affected Demographics</h2>
 <p>At these volumes and demand, the risk of multiple communities being negatively impacted at scale expands. Two communities that come to mind are businesses and users.</p>
 <h3>Businesses</h3>
-<p>Market competition is pushing companies to implement chatbots as the first point of contact for customer or include them in strategy to achieve goals like remaining competitive against peers, reducing operational costs, and increasing customer engagement. This is being done at speed which may or may not be compromising safety guardrails as we’ve noted in the beginning of this talk.</p>
+<p>Market competition is pushing companies to implement chatbots as the first point of contact for customer or include them in strategy to remain competitive against peers, reduce operational costs, and increase customer engagement. When implemented at speed we may be compromising safety guardrails.</p>
 <ul>
 <li>McKinsey’s report on the state of AI says 62% of survey respondents say their organizations are at least experimenting with AI agents</li>
 <li>An Accenture report states 57% of businesses cite chatbot technology as delivering large return on investment for minimal effort - we can see two of the top 3 reasons to use chatbots in future are personalised interactions with users and handling client queries through networking with other bots</li>
-<li>The global market for chatbots is valued at $15.57B in 2025, projected to grow to $46.6B by 2029 - so you can see the projected increase in investment here</li>
 <li>In a Cost of a Data Breach report (2025) — IBM surveyed 600 organisations globally 2024-2025 and found that 63% of breached organisations don’t have an AI governance policy or still developing one</li>
 </ul>
 <p>Companies are taking on social and ethical responsibilities as part of commercial ecosystem. There are business impacts such as:</p>
 <ul>
 <li>Brand and reputational damage if chatbots hallucinate or leak private information</li>
-<li>Financial risks from liability lawsuits or if companies are found to be non-compliant with constantly evolving regulations</li>
-<li>Operational costs if chatbots increase escalation to support teams instead of reducing work as intended</li>
+<li>Financial risks from liability lawsuits or if companies are found to be non-compliant with constantly evolving regulations e.g.The cumulative value of GDPR fines reached ~5.65B by early 2025 (https://www.varonis.com/blog/cybersecurity-statistics#ai-stats)</li>
+<li>Operational costs if chatbots increase escalation to support teams instead of reducing work as intended </li>
 </ul>
 <h3>General Users</h3>
 <p>From a user perspective, there’s a fair expectation that sensitive information won’t be leaked, that they have a smooth customer experience, receiving accurate and correct advice instead of friction. If private information’s leaked we know this leads to potentially long-term financial and personal repercussions.</p>
@@ -76,7 +77,6 @@
 <li>Air Canada Feb 2024 = The chatbot gave incorrect information about bereavement fares, telling a customer that they can retroactively receive a refund for tickets. This actually not aligned with Air Canada’s actual policy. Air Canada attempted to argue that the chatbot was a ‘separate legal entity’ but was overruled by a tribunal.</li>
 <li>DPD Jan 2024 = A frustrated user made the delivery company chatbot tell him a joke which progressed to a poem criticising the company which progressed to swearing</li>
 <li>McDonalds July 2025 = two security researchers accessed databases containing 64 million applicant chat logs with McDonald’s recruitment chatbot Olivia</li>
-<li>The cumulative value of GDPR fines reached ~5.65B by early 2025 (https://www.varonis.com/blog/cybersecurity-statistics#ai-stats)</li>
 </ul>
 <h2>Unexpected Loopholes</h2>
 <p>This is a confluence of factors: a potentially poorly secured product + direct interface between company and millions of users + sometimes highly sensitive industries, chatbots can therefore be unexpected chinks in company security armour. </p>
@@ -115,7 +115,7 @@
 </li>
 </ol>
 <h3>2. Safe</h3>
-<p>The next step is safety. here’s where we scrutinise each instruction from the perspective of an attacker, asking ourselves how can this prompt be bypassed, where are the possible attacks and consequently the possible defences. So rather than lifting the responsibility of safety onto another team or tacking it on at the end of the product, designers anticipate problems upfront and weave safety into the level of design for a stronger foundation.</p>
+<p>The next step is safety. here’s where we scrutinise each instruction from the perspective of an attacker, asking ourselves how can this prompt be bypassed, where are the possible attacks and consequently the possible defences. So rather than lifting the responsibility of safety onto another team or tacking it on at the end of the product, designers can anticipate problems upfront and weave safety into the level of design for a stronger foundation.</p>
 <p>Some examples of common risk areas that you can include in rules are Personally Identifiable Information redactions specified in your prompt itself like “Do not include phone numbers”.</p>
 <p>Separately, safety isn’t just prompt-specific but process-driven as well. For instance only ask for sensitive information when needed or build ‘gates’ into the bot’s process that requires explicit user confirmation or authorisation to proceed. An example would be confirming the user’s request back to them like a waiter would: “Is this right?” or “I’m going to go ahead and check on this account for you, are you happy for me to do that?” This keeps your design customer-centric. If you look at the example from Anthropic, your user has a way to exit the interaction. Other opportunities are to correct misunderstandings and say “No that’s not what I meant” or naturally escalate to more complex queries that extend outside of the bot’s scope to a human.</p>
 <h3>3. Succinct</h3>
@@ -123,8 +123,8 @@
 <p>This is an example breakdown from a Google paper where you can see small tweaks to conversation produces improved result from the original prompt which has 60% accuracy in results vs new prompt improved by 76% accuracy.</p>
 <p>Two caveats are:</p>
 <ol>
-<li>As you can see, this prompt was iteration 91 - it’d take many turns of prompt writing and rewriting which may seem tedious but was part of our process</li>
-<li>This is one of the final steps. This is your prompts are succinct but not at the cost of clarity. If your prompts are short but the meaning is lost that also leads to an ineffective assistant because they can’t draw meaning from your instructions.</li>
+<li>Prompts can take almost 100 iterations before it can be shipped - it's tedious, but part of the process.</li>
+<li>Your prompts must be succinct but not at the cost of clarity. If your prompts are short but the meaning is lost, that leads to an ineffective assistant because they can’t draw meaning from your instructions.</li>
 </ol>
 <p>Now that we have a structured prompt, we can test how it does under real-world adversarial testing i.e. Layer 2.</p>
 <h3>LAYER 2: USER TESTING</h3>
@@ -139,13 +139,12 @@
 <li>Edge case handling i.e. anticipating unusual scenarios (what if user is says multiple requests, or asks purposefully vague questions to confuse the assistant)</li>
 </ul>
 <h3>2. Set up Success Criteria</h3>
-<p>Then set up success criteria e.g. did we manage to break our agent (Fail) or did our agent push back appropriately?</p>
-<p>In this way we can systematically stress test our prompts, documenting what we tried, what worked (or didn’t), how we can modify the prompt and how to iterate. Iteration helps us catch edge cases we didn’t anticipate, reveals weak assumptions</p>
+<p>Then set up success criteria e.g. did we manage to break our agent or did our agent push back appropriately? This helps us systematically stress test our prompts, documenting what we tried, what worked (or didn’t), how we can modify and iterate. Iteration helps us catch edge cases we didn’t anticipate, reveals weak assumptions</p>
 <p>To be sure it’s not as comprehensive as OWASP’s LLM Top 10 or MITRE ATT&amp;CK but it’s a practical start for designers who want to bring safety earlier in the development cycle.</p>
 <p>Once you have a field-tested ready prompt (as much as possible), now’s the time to push it to production. Which brings us to Layer 3: Monitoring to Measure</p>
 <h3>LAYER 3: MONITOR</h3>
 <p>(and fix while in production). You can’t test for everything because 1) in production issues may not surface during your tests 2) models can drift over time in terms of accuracy. 3) real-world users are actually pretty creative (or wily)</p>
-<p>Before you push to production, these three things are ideal:</p>
+<p>Before you push to production, three things are ideal:</p>
 <h3>1. Sandbox environment</h3>
 <p>Here you can test new prompt changes at lower user volumes and in a controlled way rather than on your entire customer base. For instance in staging environments that’s the same as production. This helps you follow the close design-test-design again feedback loop</p>
 <h3>2. Real-time monitoring dashboards</h3>
@@ -158,8 +157,8 @@
 <p>This approach is conversation design centric but designers are one part of the product line to creates safe chatbots. A few key takeaways from my experience:</p>
 <ol>
 <li>Safety is a process and it should be built into design, not just tacked on. Our team was able to ship rapidly because we anticipated as much as we could and iterated on the rest.</li>
-<li>Testing your own agents before pushing it into production is crucial. Catch these mistakes before your users do</li>
-<li>Monitoring to measure is key to catch or mitigate deviations, drifts and other types of damage.</li>
+<li>Test your own agents before pushing it into production. Catch these mistakes before  users.</li>
+<li>Monitoring to measure is key to mitigate deviations, drifts and other types of damage.</li>
 </ol>
 <p>Implementers, proactive thinking allows us to consider novel ways that a product can be made insecure. As a final note, I wanted to call out that implementors have a shared social responsibility to be aware of risks and bring safe experiences to users. Beyond chatbots these interface with millions of people, often in vulnerable or stressful moments.</p>
 <hr />
