@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>symbiography</title>
+    <link rel="stylesheet" href="../../styles.css"/>
+
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="page-header">
+                <div class="logo"> <!--not a navigation block thus div works-->
+                    <a href="../../index.html">E</a>
+                </div>
+                <nav class="main-nav-items">
+                    <h4> <a href="../../about-page.html">about</a></h4>
+                </nav>
+        </header>
+
+        <!-- Article Breadcrumb 
+        <div class="article-breadcrumb">
+            <span> <a href="../../index.html"> symbiography </a></span>
+            <span class="breadcrumb-separator"> / </span>
+            <span>Project: commit/</span>
+        </div>-->
+
+        <main class="article-page-main">
+            <div class="article-allcontent-container">
+                <div class="article-container">
+                    <div class="article-hero-section">
+                        <span class="article-heading"><h1>Project: commit/</h1></span>
+                        <span class="subheading"><h3>vibecoding a habit-tracking app</h3></span>
+                        <time class="entry-date" datetime="2026-05-20">20 May '26</time>
+                    </div>
+
+                    <section id="article-body" class="article-body">
+                        <div class="article-body">
+                            <hr />
+<p>I started using GitHub properly almost a year ago when I was trying to build the first version of my website. It was an overengineered monstrosity. But I was surprised by how much I enjoyed looking at my commit numbers, and seeing the heatmap fill up with little green squares. I made a habit of pushing something daily, even if it was janky. Eventually the website was built, but the idea of "at least one commit a day" stuck. </p>
+<p>I've tried many a habit-tracking app. It was satisfying to see lists being checked off. But they always felt flat, atomic, and reactive rather than a proactive plan for the future. Lists were what you pulled out when a deadline loomed, not when you were looking at a 5 year plan. </p>
+<p>That was until August Bradley's PPV system (Pillars, Pipelines, Vaults), less an app and more of a "Life OS". He uses Notion to build a dynamic system that flows between abstract, lifelong goals and the practical minutia of daily tasks. Each task ladders up into their respective projects, goal outcomes, value goals and pillars i.e. the foundations of your life. That way you could aim towards your important long-term goals, while course correcting with reflective review cycles. I loved the idea of looking at your life holistically. But, it never stuck for me. It was much easier to put off reviews, kick the task can down the road, and stare at my eternal "some-day" bucket list.</p>
+<p>Today I use a simplified and scaled down version of PPV. But I wanted to see if I could combine GitHub and PPV into a single system. So gave rise to "commit/", a habit-tracking app that brings together the motivation of keeping GitHub streaks alive via heatmaps while maintaining Bradley's comprehensive life design philosophy.</p>
+<hr />
+<h1>Process</h1>
+<h3>Lo-fi wireframing on Figma</h3>
+<p>![[Screenshot 2026-05-18 at 9.51.33 pm.png|631]]</p>
+<p>It took 2 rounds of iterations of 'old school' wireframing (maybe I'll try Figma Make another time) since GitHub already has a colour palette, and I had a fairly good idea of what I wanted the concept to look like. The first iteration was abandoned when I found the project-milestone-task wiring took more screens than necessary to build in practice. Simplicity was prioritised.</p>
+<h3>Tools of Choice</h3>
+<ol>
+<li>Claude Code and Cursor</li>
+<li>Web-based Claude</li>
+<li>Expo Go </li>
+</ol>
+<h1>Design Decisions</h1>
+<p>Three themes drove my design decisions 
+1. Honest self-accounting
+2. Intentional friction
+3. Emergent design</p>
+<h2>Honest self-accounting</h2>
+<p>The temptation to kick the task can down the road was one of the biggest things that made traditional habit-tracking methods ineffective for me. I could scribble out today's goal and add it tomorrow on a whim, or it would sit collecting dust if it wasn't urgent. There were three ways I tried to solve for this:</p>
+<h3>1) GitHub Heatmap</h3>
+<p>Streaks are not unfamiliar to avid habit-tracking app users. Notion doesn't have a similar feature and so there was little immediate feedback that contextualised your progress. However the visual vividness of GitHub's heatmap offers a clear account for tasks done (or not). It also 'rewards' multiple commits through their colour palette. </p>
+<p>Bringing this to commit/, I included both a local (project-specific) and global (all projects) as an overview so the user can see a visual indicator of their current progress on two different levels.</p>
+<h3>2) Immutable Commits</h3>
+<p>There is something about permanence that changes your relationship to an object. For Notion, I could easily toggle a task on or off. When I was making a commit however it was a timestamped action. Sure I'd be able to backdate it and edit it but that was an extra step.</p>
+<p>The app also does not harshly punish projects that run past the user's self-appointed due date. The enforcing mechanism is that the commits are a pastel blue colour rather than the standard vivid green. The reward of multiple commits is also removed from late entries as well.</p>
+<h3>3) In-built reviews</h3>
+<p>Although reviews are the compass for correction, it can be difficult to give adequate time to reflect. It can be challenging to set up systems for data capture, an additional time sink to wade through admin, tracking tasks, and compile date yourself. </p>
+<p>Therefore in commit/ each daily, weekly, monthly, quarterly and yearly cell as a short autogenerated summary of stats. It the user is unable to review their stat screen due to lack of time or will, a quick journal entry will hopefully be encouraged at least. </p>
+<h2>Intentional Friction</h2>
+<p>The second temptation is the freedom you feel in activating as many projects as you want without thinking about capacity. Therefore introducing friction intentionally may be the </p>
+<h3>1) Unidirectional Assignment</h3>
+<p>A user can only add new items further up the chain rather than in the same level. </p>
+<h3>2) Active Projects have due dates</h3>
+<p>A project can only be considered active if it has a due date.</p>
+<h3>3) Avoiding unnecessary friciton</h3>
+<p>Initially required the user to go back to projects page to select a task but found that required TOO much friction.</p>
+<h2>Emergent Design Decisions</h2>
+<p><strong>Colour Palette</strong>
+The additional colours emerged later on. I wanted to preserve the minimal concept . 
+- scheduled tasks: this would appear in both the project local and global heatmap so you can see tasks that are upcoming. Tapping on the task in the global heatmap indicates what portfolio and project it's part of. There's also a view of the scheduled task that takes you to<br />
+- daily habit: this was only included at a task </p>
+<p><strong>Review Stats</strong>
+In the PPV system you need to set up your stats dashboards, and in GitHub you only see total commits. </p>
+<p><strong>Renaming projects to repos</strong>
+Changed from projects to repos because I had monthly calls with a friend and it wasn't necessarily a project to be completed. Separate areas from projects (some areas are to be maintained not finished)</p>
+<p>Flipped the colour coding reward for journal entries - earlier the better</p>
+<h2>Critiques</h2>
+<p>There's a bit of lag whereas in GitHub, you're only allowed to push to your remote repo when you have done the work AND that work can be investigated by the public if you have a public repo so people can see if you've done trash commits. </p>
+<p>What this app is NOT:
+Everything. The scope only contains actually executional pieces of work: pillars, projects, milestones and tasks. Making new features for the value goals and goal outcomes felt too abstract. Whilst features such as time blocks was too granular for what was needed. Practically the ideas were too complex for what feels like an already complex app </p>
+<h2>Claude collaboration</h2>
+<ul>
+<li>Disagreements with Claude code - milestone tab debate, "all" vs "backlog" renaming, should done projects appear in the backlog?</li>
+<li>Claude Code adding something unexpected that I didn't ask for but turned out great<ul>
+<li>dot rather than a purple square that I was envisioning</li>
+<li>Adding a daily recurring task with icon</li>
+<li>Swipe across all screens but the architecture didn't allow for it</li>
+<li>Originally considered a full overlay but it asked me to look at a persistent but dismissable banner instead. The former was a blocker and withholding information while the latter was an invitation that respected autonomy while keeping the reminder visible. Said "Your instinct is philosophically consistent with the commit model — and I think it's right— but the implementation detail matters enormously. The risk isn't that people will cheat. It's that life genuinely gets in the way... If the app hard-blocks them, the most likely outcome isn't that they write it on time next week — it's that they feel the app is punishing them and disengage". Suggested late entries are allowed but reflected late to mark them honestly. What they would hard block is editing a weekly review after submitted. "Write it late if you must, but once it's written it's immutable. That's the accountability lever that actually matters."</li>
+<li></li>
+</ul>
+</li>
+<li>Asking for help on stats -  Immediate visual feedback increases habit adherence by approximately 30% compared to delayed outcome tracking. The brain learns faster when cause and effect are tightly linked. Graphs allow you to concretely track progress over days and see how far you've come. By simply being aware of your performance trend, you'll have far more motivation to make even the tiniest of progress.<ul>
+<li>over-tracking can backfire — fueling anxiety, obsession, and perfectionism. </li>
+<li>So the research points to charts, but <em>what kind</em> of chart matters enormously. Line graphs showing improvement over time, bar charts comparing periods, and scatter plots tracking multiple variables appeal to analytical thinkers who want to understand trends and relationships — showing improvement trajectories, not just current state.</li>
+<li>They don't want to feel good — they want to <em>understand</em>. The chart should prompt insight, not emotion.</li>
+</ul>
+</li>
+<li>Time horizons<ul>
+<li><strong>Weekly</strong> → Did I do the behaviours? (execution accountability) -- Weekly self-monitoring was found to be nearly as effective as daily tracking for established habits, with significantly lower dropout rates. weekly is the primary accountability cadence — it's where behaviour is close enough in time to still be actionable and adjustable. </li>
+<li>Monthly** → Are the patterns healthy? (consistency analysis) = monthly reviews are considered essential - where you catch "tracking drift," the phenomenon where you keep recording but stop learning from the data. Monthly is the pattern-recognition layer. </li>
+<li><strong>Quarterly</strong> → Is this project actually moving? (milestone progress) = Quarterly is where the research aligns with PPV thinking — it's long enough to see genuine trend lines, short enough to course-correct within a year. Quarterly planning geared toward growth and productivity is a distinct layer from weekly and monthly</li>
+<li>Yearly** → Does my commit history reflect who I'm trying to become? (identity audit) = Yearly is identity-level. Not "did I go to the gym this week" but "am I someone who trains consistently."</li>
+<li>Each dashboard should ask a <em>different question</em>, not just show the same data at different zoom levels:</li>
+<li>For habit tasks specifically, the weekly and monthly views will be most useful. Quarterly and yearly matter more for project-level metrics. </li>
+</ul>
+</li>
+</ul>
+<h1>Screenshots of Build</h1>
+<h1>What I learned</h1>
+<ol>
+<li>There is a gap between building, learning and understanding. What does responsibility entail?</li>
+<li>What would I do differently next time?</li>
+</ol>
+<p>I fully recognise it's quite niche. It'd need a basic understanding of Git, the vocabulary and how it works. But even fewer people might find it an appealing metaphor for life. </p>
+<p>I enjoyed the task of pairing GitHub's granular commit system and heatmapping for execution with Bradley's project management for broader life architecture and meaning. It became a lightweight version of both.</p>
+<hr />
+<p>Timeframe: April - May 2026</p>
+                        </div>
+                    </section>
+                </div>
+            
+                <!-- 
+                <section id="article-similar" class="article-similar">
+                    <div class="similar-heading">
+                        <h4> similar reads </h4>
+                    </div>
+                    
+                    <div class="similar-articles-container">
+                        <ul class="similar-articles-list">
+                            <li>
+                                <span class="article-icon"><img src="assets/icons/seedling.svg" alt="seedling"></span>
+                                <article class="entries-metadata">
+                                    <time datetime="entries-date">date</time>
+                                    <span class="entries-separator"> . </span>
+                                    <a class="entries-title" href="...">article title</a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section> 
+                -->
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2026 elisa n. all rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+    </html>
