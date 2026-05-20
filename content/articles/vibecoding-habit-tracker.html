@@ -38,68 +38,80 @@
                     <section id="article-body" class="article-body">
                         <div class="article-body">
                             <hr />
-<p>I started using GitHub properly almost a year ago when I was trying to build the first version of my website. It was an overengineered monstrosity. But I was surprised by how much I enjoyed looking at my commit numbers, and seeing the heatmap fill up with little green squares. I made a habit of pushing something daily, even if it was janky. Eventually the website was built, but the idea of "at least one commit a day" stuck. </p>
-<p>I've tried many a habit-tracking app. It was satisfying to see lists being checked off. But they always felt flat, atomic, and reactive rather than a proactive plan for the future. Lists were what you pulled out when a deadline loomed, not when you were looking at a 5 year plan. </p>
-<p>That was until August Bradley's PPV system (Pillars, Pipelines, Vaults), less an app and more of a "Life OS". He uses Notion to build a dynamic system that flows between abstract, lifelong goals and the practical minutia of daily tasks. Each task ladders up into their respective projects, goal outcomes, value goals and pillars i.e. the foundations of your life. That way you could aim towards your important long-term goals, while course correcting with reflective review cycles. I loved the idea of looking at your life holistically. But, it never stuck for me. It was much easier to put off reviews, kick the task can down the road, and stare at my eternal "some-day" bucket list.</p>
-<p>Today I use a simplified and scaled down version of PPV. But I wanted to see if I could combine GitHub and PPV into a single system. So gave rise to "commit/", a habit-tracking app that brings together the motivation of keeping GitHub streaks alive via heatmaps while maintaining Bradley's comprehensive life design philosophy.</p>
+<p>I started using GitHub properly almost a year ago when I was trying to build the first version of my website. </p>
+<p>It was an overengineered monstrosity. </p>
+<p>But I was surprised by how much I enjoyed looking at my commit numbers, and seeing the heatmap fill up with little green squares. I made a habit of pushing something daily, even if it was janky. Eventually the website was built, but the idea of "at least one commit a day" stuck. </p>
+<p>I've tried many a habit-tracking app, and it's satisfying to see lists being checked off. But they always felt flat, atomic, and reactive rather than a proactive plan for the future. Lists were something you pulled out when a deadline loomed, not when you were looking at a 5 year plan. </p>
+<p>That was until August Bradley's PPV system (Pillars, Pipelines, Vaults), less an app and more of a "Life OS". He uses Notion to build a dynamic system that flows between abstract, lifelong goals and the practical minutia of daily tasks. Each task ladders up into their respective projects, goal outcomes, value goals and pillars i.e. the foundations of your life. That way you execute towards your important long-term goals, while course-correcting with regular review cycles. I loved the idea of looking at your life as a holistic system. </p>
+<p>But, it never stuck for me. It was much easier to put off reviews, kick the task can down the road, and stare at my ever-growing "some-day" bucket list. Today I use a simplified and scaled down version of PPV. But I wanted to see if I could combine GitHub and PPV into a single system. </p>
+<p>Hence "commit/", a habit-tracking app that brings together the motivation of keeping GitHub streaks alive via heatmaps while maintaining Bradley's comprehensive life design philosophy.</p>
 <hr />
 <h2>Process</h2>
 <h3>Lo-fi wireframing on Figma</h3>
 <p>![[Screenshot 2026-05-18 at 9.51.33 pm.png|631]]</p>
-<p>It took 2 rounds of iterations of 'old school' wireframing (maybe I'll try Figma Make another time) since GitHub already has a colour palette, and I had a fairly good idea of what I wanted the concept to look like. The first iteration was abandoned when I found the project-milestone-task wiring took more screens than necessary to build in practice. Simplicity was prioritised.</p>
-<p><strong>Tools of Choice</strong>
-1. Claude Code and Cursor
-2. Web-based Claude
-3. Expo Go </p>
+<p>It took 2 rounds of iterations of 'old school' wireframing (maybe I'll try Figma Make another time). GitHub already has a colour palette, and I had a fairly good idea of what I wanted the concept to look like. The first iteration was abandoned when I found the project-milestone-task wiring took more screens than necessary to build in practice. Simplicity was prioritised.</p>
+<p><strong>Tools of Choice</strong></p>
+<ol>
+<li>Claude Code and Cursor</li>
+<li>Web-based Claude</li>
+<li>Expo Go </li>
+</ol>
 <h2>Design Decisions</h2>
-<p>Three themes drove my design decisions 
-1. Honest self-accounting
-2. Intentional friction
-3. Emergent design</p>
+<p>Three themes drove my design decisions</p>
+<ol>
+<li>Honest self-accounting</li>
+<li>Intentional friction</li>
+<li>Emergent design</li>
+</ol>
 <h3>Honest self-accounting</h3>
-<p>The temptation to kick the task can down the road was one of the biggest things that made traditional habit-tracking methods ineffective for me. I could scribble out today's goal and add it tomorrow on a whim, or it would sit collecting dust if it wasn't urgent. There were three ways I tried to solve for this:</p>
-<p><strong>1/ GitHub Heatmap</strong>
-Streaks are not unfamiliar to avid habit-tracking app users. Notion doesn't have a similar feature and so there was little immediate feedback that contextualised your progress. However the visual vividness of GitHub's heatmap offers a clear account for tasks done (or not). It also 'rewards' multiple commits through their colour palette. </p>
-<p>Bringing this to commit/, I included both a local (project-specific) and global (all projects) as an overview so the user can see a visual indicator of their current progress on two different levels.</p>
-<p><strong>2/ Immutable Commits</strong>
-There is something about permanence that changes your relationship to an object. For Notion, I could easily toggle a task on or off. When I was making a commit however it was a timestamped action. Sure I'd be able to backdate it and edit it but that was an extra step.</p>
-<p>The app also does not harshly punish projects that run past the user's self-appointed due date. The enforcing mechanism is that the commits are a pastel blue colour rather than the standard vivid green. The reward of multiple commits is also removed from late entries as well.</p>
-<p><strong>3/ In-built reviews</strong>
-Although reviews are the compass for correction, it can be difficult to give adequate time to reflect. It can be challenging to set up systems for data capture, an additional time sink to wade through admin, tracking tasks, and compile date yourself. </p>
-<p>Therefore in commit/ each daily, weekly, monthly, quarterly and yearly cell as a short autogenerated summary of stats. It the user is unable to review their stat screen due to lack of time or will, a quick journal entry will hopefully be encouraged at least. </p>
+<p>The temptation to kick tasks down the road was one of the biggest things that made traditional habit-tracking methods ineffective for me. I could scribble out today's goal and add it tomorrow on a whim, or it would sit collecting dust if it wasn't urgent. There were three ways I tried to solve for this:</p>
+<p><strong>1/ GitHub Heatmaps</strong></p>
+<p>Streaks are not unfamiliar to the avid habit-tracking app user. GitHub's heatmap offers immediate feedback both for tasks done (or not), and higher commit activity. However, it doesn't have an ability to filter for project-specific commits, presumably because it's optimising for other complex features. Conversely, Notion doesn't have a native heatmap feature but it can drill into minute specifics of your projects (there is a similar GitHub feature implemented by a community member though https://www.reddit.com/r/Notion/comments/1pjrczh/someone_asked_a_few_weeks_ago_if_a_githubstyle/). </p>
+<p>Bringing this to commit/, I included both a local (project-specific) and global (all projects) as an overview. In this way, the user can see a visual indicator of their current progress on two different levels.</p>
+<p><strong>2/ Immutable Commits</strong></p>
+<p>Given the decentralised nature of GitHub i.e. anyone can contribute to projects at any time from anywhere, commits and commit hashes arose from ensuring data security and that the data wasn't tampered with. The public can interrogate and view the before and after of a piece of code to ensure accountability. Sure you can revert it, but that action is recorded too.</p>
+<p>When this lens of permanence and timestamped behaviour is translated to tasks, it changes your relationship to an object. In Notion, I could easily toggle a task on or off, unable to see that this seemingly small change had an impact on overall activity. </p>
+<p>This was a useful feature to bring to commit/, enabling a user to view the contribution graph at both the local and global heatmap levels.</p>
+<p><strong>3/ In-built reviews</strong></p>
+<p>Although reviews are the compass for correction, it can be difficult to carve out the time to reflect. Not only that but it's challenging to set up systems for adequate data capture, compilation and analysis. There was a period of time where I faithfully tracked my time on every project I was doing, but it was only the occasional review that gave me insight into where exactly it went.  </p>
+<p>To encourage this, a short summary of stats is autogenerated in each daily, weekly, monthly, quarterly and yearly cell. It the user is unable to review the more comprehensive stat screen, a quick journal entry will hopefully be more accessible </p>
 <h3>Intentional Friction</h3>
-<p>The second temptation is the freedom you feel in activating as many projects as you want without thinking about capacity. Therefore introducing friction intentionally may be the </p>
-<p><strong>1/ Unidirectional Assignment</strong>
-A user can only add new items further up the chain rather than in the same level. </p>
-<p><strong>2/ Active Projects have due dates</strong>
-A project can only be considered active if it has a due date.</p>
-<p><strong>3/ Avoiding unnecessary friction</strong>
- Initially required the user to go back to projects page to select a task but found that required TOO much friction.</p>
+<p>Many habit-tracking apps have flexibility - the ability to freely toggle tasks as done or note, or start a project (but never finishing it). Therefore introducing friction intentionally was a key decision.</p>
+<p><strong>1/ Unidirectional Assignment</strong></p>
+<p>To avoid facilitating trigger-happy creations, a user can only add new items further up the chain rather than in the same level. </p>
+<p><strong>2/ Active Projects must have due dates</strong></p>
+<p>A project can only be activated if it has a due date, otherwise it will be left as backlog. Making a project active is therefore a decision to commit to completing it.</p>
+<p><strong>3/ Avoiding unnecessary friction</strong></p>
+<p>However, friction should only be added where it's helpful rather than a hinderance. I had Initially required the user to go back to projects page to select a task but found that was too much friction that it was annoying.</p>
 <h3>Emergent Design Decisions</h3>
-<p><strong>Colour Palette</strong>
-The additional colours emerged later on. I wanted to preserve the minimal concept . 
-- scheduled tasks: this would appear in both the project local and global heatmap so you can see tasks that are upcoming. Tapping on the task in the global heatmap indicates what portfolio and project it's part of. There's also a view of the scheduled task that takes you to<br />
-- daily habit: this was only included at a task </p>
-<p><strong>Review Stats</strong>
-In the PPV system you need to set up your stats dashboards, and in GitHub you only see total commits. </p>
-<p><strong>Renaming projects to repos</strong>
-Changed from projects to repos because I had monthly calls with a friend and it wasn't necessarily a project to be completed. Separate areas from projects (some areas are to be maintained not finished)</p>
-<p>Flipped the colour coding reward for journal entries - earlier the better</p>
-<h2>Critiques</h2>
-<p>There's a bit of lag whereas in GitHub, you're only allowed to push to your remote repo when you have done the work AND that work can be investigated by the public if you have a public repo so people can see if you've done trash commits. </p>
-<p>What this app is NOT:
-Everything. The scope only contains actually executional pieces of work: pillars, projects, milestones and tasks. Making new features for the value goals and goal outcomes felt too abstract. Whilst features such as time blocks was too granular for what was needed. Practically the ideas were too complex for what feels like an already complex app </p>
-<h2>Claude collaboration</h2>
+<p>There were a few emergent design choices that added to the experience:</p>
+<p><strong>1) Colour Palette</strong></p>
+<p>GitHub already has a recognisable colour palette. I wanted to preserve the minimal concept and if there were new colours, each would be quickly scannable:</p>
 <ul>
-<li>Disagreements with Claude code - milestone tab debate, "all" vs "backlog" renaming, should done projects appear in the backlog?</li>
-<li>Claude Code adding something unexpected that I didn't ask for but turned out great<ul>
-<li>dot rather than a purple square that I was envisioning</li>
-<li>Adding a daily recurring task with icon</li>
-<li>Swipe across all screens but the architecture didn't allow for it</li>
-<li>Originally considered a full overlay but it asked me to look at a persistent but dismissable banner instead. The former was a blocker and withholding information while the latter was an invitation that respected autonomy while keeping the reminder visible. Said "Your instinct is philosophically consistent with the commit model — and I think it's right— but the implementation detail matters enormously. The risk isn't that people will cheat. It's that life genuinely gets in the way... If the app hard-blocks them, the most likely outcome isn't that they write it on time next week — it's that they feel the app is punishing them and disengage". Suggested late entries are allowed but reflected late to mark them honestly. What they would hard block is editing a weekly review after submitted. "Write it late if you must, but once it's written it's immutable. That's the accountability lever that actually matters."</li>
-<li></li>
+<li>Scheduled tasks (purple) = these appear in both the project local and global heatmap so upcoming events are visible and easily accessed</li>
+<li>Recurring daily tasks (deep blue) = This indicates which tasks are recurring.</li>
+<li>Late tasks (light blue) = If a user makes commits past their self-appointed due date, the colour changes from green to blue. The deepening colour schematic also does not appear for late entries. The app doesn't punish the user by blocking them from making commits, but it doesn't have the same subtle reward loop either. </li>
 </ul>
-</li>
+<p>The colour scheme was also flipped for journal entries i.e. the earlier the user submitted their reflection, the deeper the colour whereas the later they were the lighter the colour. </p>
+<p><strong>2) Renaming "Projects" to "Repos"</strong></p>
+<p>During testing I discovered that "monthly calls with friend" wasn't really a project to be completed. August Bradley also notes that sometimes projects are to be maintained but not necessarily completed. Instead, I used the broader term of "repos" to indicate that these are domains that can either be a project or an area of life.</p>
+<h2>Claude Collaboration</h2>
+<p>There were interesting points in the journey where Claude would push back on things I'd suggested. The more memorable ones were:</p>
+<p><strong>1) Review Reminders</strong>
+Given how important I considered completing reviews, I had initially thought of 3 layers of review reminders. The user would be able to configure these in Settings: </p>
+<ul>
+<li>Remind Once = A banner would drop from the top. When viewed once it disappears.</li>
+<li>Persistent Reminder = The banner remains until the user writes a review.</li>
+<li>Screen Overlay = The entire stat screen gets blurred until the user writes a review.</li>
+</ul>
+<p>Originally considered a full overlay but it asked me to look at a persistent but dismissable banner instead. The former was a blocker and withholding information while the latter was an invitation that respected autonomy while keeping the reminder visible. Suggested late entries are allowed but reflected late to mark them honestly. What they would hard block is editing a weekly review after submitted. "Write it late if you must, but once it's written it's immutable. That's the accountability lever that actually matters."</p>
+<blockquote>
+<p>Your instinct is philosophically consistent with the commit model — and I think it's right— but the implementation detail matters enormously. The risk isn't that people will cheat. It's that life genuinely gets in the way... If the app hard-blocks them, the most likely outcome isn't that they write it on time next week — it's that they feel the app is punishing them and disengage". </p>
+</blockquote>
+<p><strong>2) Scheduled Tasks</strong></p>
+<p>My vision of a scheduled task is that it would appear as a purple filled cell rather than green. However I hadn't specified it in my prompt. When Claude coded it, it appeared as a small dot in the bottom right-hand corner of the cell. I hadn't considered such an elegant solution. A full purple square would've unnecessarily drawn the eye. As a dot, it was visible enough to attract attention, but not so loud that it overwhelmed the original colour palette. </p>
+<p><strong>3) Stat Screen</strong></p>
+<ul>
 <li>Asking for help on stats -  Immediate visual feedback increases habit adherence by approximately 30% compared to delayed outcome tracking. The brain learns faster when cause and effect are tightly linked. Graphs allow you to concretely track progress over days and see how far you've come. By simply being aware of your performance trend, you'll have far more motivation to make even the tiniest of progress.<ul>
 <li>over-tracking can backfire — fueling anxiety, obsession, and perfectionism. </li>
 <li>So the research points to charts, but <em>what kind</em> of chart matters enormously. Line graphs showing improvement over time, bar charts comparing periods, and scatter plots tracking multiple variables appeal to analytical thinkers who want to understand trends and relationships — showing improvement trajectories, not just current state.</li>
@@ -118,6 +130,10 @@ Everything. The scope only contains actually executional pieces of work: pillars
 </ul>
 <h2>Screenshots of Build</h2>
 <p>(coming soon)</p>
+<h2>Critiques</h2>
+<p>There's a bit of lag whereas in GitHub, you're only allowed to push to your remote repo when you have done the work AND that work can be investigated by the public if you have a public repo so people can see if you've done trash commits. </p>
+<p>What this app is NOT:
+Everything. The scope only contains actually executional pieces of work: pillars, projects, milestones and tasks. Making new features for the value goals and goal outcomes felt too abstract. Whilst features such as time blocks was too granular for what was needed. Practically the ideas were too complex for what feels like an already complex app </p>
 <h2>What I learned</h2>
 <ol>
 <li>There is a gap between building, learning and understanding. What does responsibility entail?</li>
