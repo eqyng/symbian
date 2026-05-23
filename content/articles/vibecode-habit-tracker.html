@@ -42,12 +42,12 @@
 <p>You might also know what I mean when I say there was something missing when it came to apps. I wasn't able to successfully <em>build</em> habits. And there's a subtly different thing than purely tracking them.</p>
 <p>The idea of habit tracking leading to habit formation rests on surfacing awareness of 'things to be done'. But in the habit-tracking apps I've tried (Todoist, Apple Notes), there were three main challenges:</p>
 <ul>
-<li>Flat = There were at most two levels where you could group tasks into - the tasks themselves, and maybe </li>
-<li>Static = </li>
+<li>Flat = There were at most two levels where you could group tasks into - the tasks themselves, and maybe separate folder to sort tasks into.</li>
+<li>Static = The list is stable for only the tasks that are important right now, or in the near future.</li>
 <li>Reactive = The flat, static structure always lead to a feeling of reactivity. You were crossing off items, but there was no space for looking ahead or identifying where it fit into values. Lists were something you pulled out when a deadline loomed, not when you were looking at a 5 year plan. </li>
 </ul>
-<p>It made me feel like I was travelling overseas, but with only a checklist in hand. I was at the behest of my whims, filled with spontaneity and urgency. But it didn't help me to anticipate my metaphorical money running out, if I wanted to book an experience </p>
-<p>Tracking habits is only the surface. It's also tracking values, exploring new things, catching up with old friends, and all the other little things that make a life. It made me realise that architecture is crucial. And to have architecture is to build a system. Life is complex and full of interrelated parts - some of which are currently moving, some that are paused until they make sense for the context of your life. </p>
+<p>It made me feel like I was travelling overseas, but with only a checklist in hand. I was at the behest of my whims, filled with internal spontaneity and only pushed to urgency when there was some sense of external deadline. But it didn't help me to anticipate my metaphorical money running out, or if I wanted to book an experience. I needed to plan for those things.</p>
+<p>I realised tracking habits is only the surface. It's also tracking values, exploring new things, catching up with old friends, and all the other little things that make a life. Architecture is crucial, and to have architecture is to build a system. Life is complex and full of interrelated parts.</p>
 <p>Two concepts:</p>
 <ol>
 <li>August Bradley's Pipelines-Pillars-Vaults (PPV)</li>
@@ -60,7 +60,9 @@
 <h2>Process</h2>
 <h3>Lo-fi wireframing on Figma</h3>
 <p>![[Screenshot 2026-05-18 at 9.51.33 pm.png|631]]</p>
-<p>It took 2 rounds of iterations of 'old school' wireframing (maybe I'll try Figma Make another time). GitHub already has a colour palette, and I had a fairly good idea of what I wanted the concept to look like. The first iteration was abandoned when I found the project-milestone-task wiring took more screens than necessary to build in practice. Simplicity was prioritised.</p>
+<p>It took 2 rounds of iterations of 'old school' wireframing (maybe I'll try Figma Make another time). GitHub already has a colour palette, and I had a fairly good idea of what I wanted the concept to look like. </p>
+<p>After The first iteration was abandoned when I found the project-milestone-task wiring took more screens than necessary to build in practice. Simplicity was prioritised.</p>
+<p>All up it took about two weeks to get down the main screens and features, with the next two weeks dedicated to UX and bug fixes. </p>
 <p><strong>Tools of Choice</strong></p>
 <ol>
 <li>Claude Code and Cursor</li>
@@ -80,7 +82,7 @@
 <p>Streaks are not unfamiliar to the avid habit-tracking app user. GitHub's heatmap offers immediate feedback both for tasks done (or not), and higher commit activity. However, it doesn't have an ability to filter for project-specific commits, presumably because it's optimising for other complex features. Conversely, Notion doesn't have a native heatmap feature but it can drill into minute specifics of your projects (there is a similar GitHub feature implemented by a community member though https://www.reddit.com/r/Notion/comments/1pjrczh/someone_asked_a_few_weeks_ago_if_a_githubstyle/). </p>
 <p>Bringing this to commit/, I included both a local (project-specific) and global (all projects) as an overview. In this way, the user can see a visual indicator of their current progress on two different levels.</p>
 <p><strong>2/ Immutable Commits</strong></p>
-<p>Given the decentralised nature of GitHub i.e. anyone can contribute to projects at any time from anywhere, commits and commit hashes arose from ensuring data security and that the data wasn't tampered with. The public can interrogate and view the before and after of a piece of code to ensure accountability. Sure you can revert it, but that action is recorded too.</p>
+<p>Given the decentralised nature of GitHub i.e. anyone can contribute to projects at any time from anywhere, commits and commit hashes arose from ensuring data security and that the data wasn't tampered with. The public can interrogate and view the before and after of a piece of code as well to ensure accountability. Sure, you can revert it, but that action is recorded too.</p>
 <p>When this lens of permanence and timestamped behaviour is translated to tasks, it changes your relationship to an object. In Notion, I could easily toggle a task on or off, unable to see that this seemingly small change had an impact on overall activity. </p>
 <p>This was a useful feature to bring to commit/, enabling a user to view the contribution graph at both the local and global heatmap levels.</p>
 <p><strong>3/ In-built reviews</strong></p>
@@ -99,7 +101,7 @@
 <p><strong>1) Colour Palette</strong></p>
 <p>GitHub already has a recognisable colour palette. I wanted to preserve the minimal concept and if there were new colours, each would be quickly scannable:</p>
 <ul>
-<li>Scheduled tasks (purple) = these appear in both the project local and global heatmap so upcoming events are visible and easily accessed</li>
+<li>Scheduled tasks (purple) = these appear in both the project local and global heatmap so upcoming events are visible and easily accessed.</li>
 <li>Recurring daily tasks (deep blue) = This indicates which tasks are recurring.</li>
 <li>Late tasks (light blue) = If a user makes commits past their self-appointed due date, the colour changes from green to blue. The deepening colour schematic also does not appear for late entries. The app doesn't punish the user by blocking them from making commits, but it doesn't have the same subtle reward loop either. </li>
 </ul>
@@ -107,7 +109,7 @@
 <p><strong>2) Renaming "Projects" to "Repos"</strong></p>
 <p>During testing I discovered that "monthly calls with friend" wasn't really a project to be completed. August Bradley notes that sometimes projects are to be maintained but not necessarily completed. It can be a habit, ritual or practice. Instead, I used the broader term of "repos" to indicate that these are domains that can either be a project or an area of life.</p>
 <h2>Claude Collaboration</h2>
-<p>There were interesting points in the journey where Claude would push back on things I'd suggested. The more memorable ones were:</p>
+<p>There were interesting points in the journey where Claude would push back on things I'd suggested. The four more memorable ones were:</p>
 <p><strong>1) Design reconsideration</strong></p>
 <p>Given how important I considered completing reviews, I had initially thought of 3 layers of review reminders. The user would be able to configure these in Settings: </p>
 <ul>
@@ -117,44 +119,43 @@
 </ul>
 <p>Claude cautioned me against using a screen overlay, asking me to consider a persistent banner instead, and a hard block of editing a weekly review until after submission:</p>
 <blockquote>
-<p>Your instinct is philosophically consistent with the commit model — and I think it's right— but the implementation detail matters enormously. The risk isn't that people will cheat. It's that life genuinely gets in the way...If the app hard-blocks them, the most likely outcome isn't that they write it on time next week — it's that they feel the app is punishing them and disengage. </p>
+<p>Your instinct is philosophically consistent with the commit model — and I think it's right— but the implementation detail matters. The risk isn't that people will cheat. It's that life genuinely gets in the way...If the app hard-blocks them, the most likely outcome isn't that they write it on time next week — it's that they feel the app is punishing them and disengage. </p>
 </blockquote>
-<p>I was surprised by what I considered empathy from Claude, and was inclined to agree that from an empathy perspective. Some options feel like punishments wither others are invitations. However, I would say that the user's autonomy is still being respected because the user is self-selecting into the mode that they desire. This reconsideration led to a "late entry" feature, where the user would still be able to write reviews, and a change to "Review once" banner only. </p>
+<p>I was surprised by this gentle, empathetic pushback from Claude. I was inclined to agree - some options do feel like punishments while others are invitations. However, I would still say that the user's autonomy is still being respected because the user is self-selecting into the mode. Nevertheless, this reconsideration led to a "late entry" feature, where the review can still be submitted but the cell indicates it's late, as well as a change to a "Review once" banner only. </p>
 <p><strong>2) Scheduled Tasks</strong></p>
 <p>My vision of a scheduled task is that it would appear as a purple filled cell rather than green. However I hadn't specified it in my prompt. </p>
 <p>When Claude coded it, it appeared as a small dot in the bottom right-hand corner of the cell. I hadn't considered such an elegant solution. A full purple square would've unnecessarily drawn the eye. As a dot, it was visible enough to attract attention, but not so loud that it overwhelmed the original colour palette. </p>
 <p><strong>3) Stat Screen</strong></p>
-<p>Claude Code assisted as a jumping off point for the stats screen </p>
+<p>Claude Code assisted as a jumping off point for the stats screen. I had initially thought of the stats page as purely numbers but it suggested a visual representation instead. The immediate visual feedback helps the brain learn faster when cause and effect are tightly linked. Line graphs, bar charts and scatter plots enable concrete tracking over relative progress over time i.e. metrics of interest for analytical thinkers who enjoy understanding insights, trajectories and trends not just current state.</p>
+<p>Claude did caution against over-tracking backfiring, fuelling negative emotions such as anxiety, obsession and perfectionism where the focus is on the numbers and not the actual project outcome (particularly for the cohort of people who find GitHub as metaphorically appealing as I do, I don't think they need more of that). </p>
+<p><strong>4) Time Horizons</strong></p>
+<p>An interesting concept was how different time horizons allowed for different lenses of analysis, a different questions, and why each time period is necessary to review when the development of habits. </p>
 <ul>
-<li>Asking for help on stats -  Immediate visual feedback increases habit adherence by approximately 30% compared to delayed outcome tracking. The brain learns faster when cause and effect are tightly linked. Graphs allow you to concretely track progress over days and see how far you've come. By simply being aware of your performance trend, you'll have far more motivation to make even the tiniest of progress.<ul>
-<li>over-tracking can backfire — fueling anxiety, obsession, and perfectionism. </li>
-<li>So the research points to charts, but <em>what kind</em> of chart matters enormously. Line graphs showing improvement over time, bar charts comparing periods, and scatter plots tracking multiple variables appeal to analytical thinkers who want to understand trends and relationships — showing improvement trajectories, not just current state.</li>
-<li>They don't want to feel good — they want to <em>understand</em>. The chart should prompt insight, not emotion.</li>
+<li>Weekly = execution
+  You can tactically adjust behaviours when you notice any daily deviations in data.</li>
+<li>Monthly = consistency
+  This is where you begin to recognise patterns across data points.</li>
+<li>Quarterly = project accountability
+  Across three months is when you can notice trend lines and behaviours that emerge over a longer period of time. </li>
+<li>Yearly = identity
+  The ultimate bird's eye view. Claude put it well "Yearly is identity-level. Not 'Did I go to the gym this week?' but 'Am I someone who trains consistently?'</li>
 </ul>
-</li>
-<li>Time horizons<ul>
-<li><strong>Weekly</strong> → Did I do the behaviours? (execution accountability) -- Weekly self-monitoring was found to be nearly as effective as daily tracking for established habits, with significantly lower dropout rates. weekly is the primary accountability cadence — it's where behaviour is close enough in time to still be actionable and adjustable. </li>
-<li>Monthly** → Are the patterns healthy? (consistency analysis) = monthly reviews are considered essential - where you catch "tracking drift," the phenomenon where you keep recording but stop learning from the data. Monthly is the pattern-recognition layer. </li>
-<li><strong>Quarterly</strong> → Is this project actually moving? (milestone progress) = Quarterly is where the research aligns with PPV thinking — it's long enough to see genuine trend lines, short enough to course-correct within a year. Quarterly planning geared toward growth and productivity is a distinct layer from weekly and monthly</li>
-<li>Yearly** → Does my commit history reflect who I'm trying to become? (identity audit) = Yearly is identity-level. Not "did I go to the gym this week" but "am I someone who trains consistently."</li>
-<li>Each dashboard should ask a <em>different question</em>, not just show the same data at different zoom levels:</li>
-<li>For habit tasks specifically, the weekly and monthly views will be most useful. Quarterly and yearly matter more for project-level metrics. </li>
-</ul>
-</li>
-</ul>
+<p>Weekly and monthly views are more execution-based and helpful for habit tasks, while quarterly and yearly are useful for project-level metrics.</p>
 <h2>Screenshots of Build</h2>
 <p>(coming soon)</p>
 <h2>Critiques</h2>
-<p>There's a bit of lag whereas in GitHub, you're only allowed to push to your remote repo when you have done the work AND that work can be investigated by the public if you have a public repo so people can see if you've done trash commits. </p>
-<p>What this app is NOT:
-Everything. The scope only contains actually executional pieces of work: pillars, projects, milestones and tasks. Making new features for the value goals and goal outcomes felt too abstract. Whilst features such as time blocks was too granular for what was needed. Practically the ideas were too complex for what feels like an already complex app </p>
+<p>Like with any system, there are ways to game it, and this app is not immune. GitHub does a better job where you can only push a commit to your remote repo <em>after</em> you've done the work. The panopticon of the Internet also keeps you accountable if you have a public repo because a curious person can interrogate your work and/or any trash commits. </p>
+<p>There were cons in fully committing to either GitHub or Bradley's design. My initial idea of including git branches and a SourceTree-like diagram didn't fit well with Bradley's flow while Bradley's idea of value goals and goal outcomes felt to nebulous to concretise into Git vocabulary. I'd considered including hour-by-hour tracking, but it felt too granular for what was needed. Some things had to give so that the app could structurally support a project that seamlessly bridged both Git and PPV ideas. </p>
+<p>So the scope of the app is mostly executional aspects of work (projects, milestones and tasks) only loosely guided by overarching pillars/portfolios. </p>
 <h2>What I learned</h2>
+<p>It was new programming with Claude Code - I'm glad I had some grounding by experiencing 'traditional' coding beforehand.</p>
 <ol>
-<li>There is a gap between building, learning and understanding. What does responsibility entail?</li>
-<li>What would I do differently next time?</li>
+<li>Feelings of impatience and comparison - Having previously programmed my own website in two months or so, it was remarkable to see that I had scaffolded my app in half an hour. Even more galling, after hearing other vibecoders managing to finish a project in 8 hours, I felt like I was taking way too long. I became impatient with myself and Claude.</li>
+<li>There is a gap between building, learning and understanding - The feeling of impatience pushed me to use web Claude as an intermediary for my prompts. At the start the purpose was to learn how to prompt better, but it became all to easy to pass off the hard work to Claude.</li>
+<li>Trusting all of Claude's actions - A big security red flag. In the beginning I looked at every single line. But after a while it became easier to simply tap "Yes" for every code it'll execute.</li>
 </ol>
-<p>I fully recognise it's quite niche. It'd need a basic understanding of Git, the vocabulary and how it works. But even fewer people might find it an appealing metaphor for life. </p>
-<p>I enjoyed the task of pairing GitHub's granular commit system and heatmapping for execution with Bradley's project management for broader life architecture and meaning. It became a lightweight version of both.</p>
+<p>There definitely was a slippery slope here. The biggest thing was the first point - it was wild to experience the feelings of frustration and impatience for myself after hearing about it from other people. And over some app that was meant to be a fun side project. </p>
+<p>I fully recognise the app is quite niche. Users would need a basic understanding of Git for the extended metaphor to make sense, and even fewer may find such an idea makes sense. But I enjoyed the task of pairing the commit system and heatmapping for execution with Bradley's project management for broader life architecture and meaning. It became a lightweight version of both.</p>
 <hr />
 <p>Timeframe: April - May 2026</p>
                         </div>
