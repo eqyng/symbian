@@ -9,6 +9,24 @@
     "url": "content/articles/vibecode-habit-tracker.html"
   },
   {
+    "title": "March 2026 Project: Learn sign language",
+    "date": "2026-03-25",
+    "dateLabel": "25 Mar '26",
+    "readTime": "5 minutes",
+    "subheading": "communicating differently",
+    "slug": "marproject-sign-language",
+    "url": "content/articles/marproject-sign-language.html"
+  },
+  {
+    "title": "Feb 2026 Project: Respecting Nature",
+    "date": "2026-02-21",
+    "dateLabel": "21 Feb '26",
+    "readTime": "5 minutes",
+    "subheading": "initial experience of Nature",
+    "slug": "febproject-respect-nature",
+    "url": "content/articles/febproject-respect-nature.html"
+  },
+  {
     "title": "Designing Risk-Based AI Agents",
     "date": "2025-11-28",
     "dateLabel": "28 Nov '25",
