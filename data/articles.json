@@ -1,12 +1,21 @@
 [
   {
-    "title": "reflections on poetry",
+    "title": "Hiding the Machine in the Man",
+    "date": "2026-08-22",
+    "dateLabel": "22 Aug '26",
+    "readTime": "4 minutes",
+    "subheading": "what a shower call revealed",
+    "slug": "hiding-machine-in-man",
+    "url": "content/articles/hiding-machine-in-man.html"
+  },
+  {
+    "title": "Why good writers are gracious hosts",
     "date": "2026-06-14",
     "dateLabel": "14 Jun '26",
     "readTime": "3 minutes",
     "subheading": "on writing as an art form",
-    "slug": "reflections-on-poetry",
-    "url": "content/articles/reflections-on-poetry.html"
+    "slug": "good-writers-gracious-hosts",
+    "url": "content/articles/good-writers-gracious-hosts.html"
   },
   {
     "title": "Book Notes - Steal Like An Artist (Kleon, 2012)",
