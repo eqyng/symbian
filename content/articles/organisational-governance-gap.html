@@ -31,7 +31,7 @@
                 <div class="article-container">
                     <div class="article-hero-section">
                         <span class="article-heading"><h1>The Organisational Governance Gap</h1></span>
-                        <span class="subheading"><h3>AI compliance needs a new model of organisational memory</h3></span>
+                        <span class="subheading"><h3>AI compliance needs a new knowledge model</h3></span>
                         <time class="entry-date" datetime="2026-08-31">31 Aug '26</time>
                     </div>
 
@@ -57,13 +57,15 @@
 <p>However, even if information is centralised, over time wiki-like pages become sprawling beasts of links which may not be easily accessible, discovered, regularly updated, referred to later or organised well. Documentation becomes a burden for projects moving at speed, with shifting priorities and under deadline pressures.</p>
 <p>While organisations are generally good at preserving artefacts, they are poor at preserving the reasoning that connects them. This is costly for future teams who only have outcomes to reconstruct more amorphous details like what lessons were learned, what information can still be trusted.</p>
 <p>Most governance frameworks are designed around these artefacts being the only measurable, traceable and auditable chain of reasoning. The unfortunate assumption is not that there's enough documentation, but the correct kind of documentation available to make an informed justification in the first place.</p>
-<h2>Knowledge Management Models</h2>
+<h2>Knowledge Management Models (KMMs)</h2>
 <p>The problem of organisational knowledge is an old one. </p>
 <p>Knowledge Management Models (KMMs) are processes that aim to retain implicit (tacit) and explicit knowledge as valuable levers of competitiveness, productivity and effectiveness (Haslinda &amp; Sarinah, 2009). Explicit knowledge is clearly codified whereas tacit knowledge manifests as assumptions and expectations that underlie an organisation's structure.</p>
+<h3>A Gap in Existing KMMs</h3>
 <p>Existing models such as Boisot's Knowledge Category Models (1987), Nonaka's Knowledge Management Model (1995) and Demerest's Knowledge Management Model (1999) attempt to articulate the flow of knowledge in organisations and society. The models vary in representations from 2x4 matrices spanning tacit and explicit knowledge, as well as across individual and organisational domains to flowcharts.</p>
 <p>However, there is a temporal aspect that's missing from these models, where the 'knowledge spiral' of knowledge dissemination is assumed to be unidirectional from individual to organisation, and remains consistently clear across time. </p>
 <p>The current issue that AI governance has surfaced is that information that was once explicit can become increasingly uninterpretable unless intentionally documented. And that implicit knowledge can be easily derived from explicit artefacts. But rarely is it someone's deliverable to document the reasoning steps that led up to a decision.</p>
-<p>We need a new method of enquiry. KMS map whether organisations have existing knowledge management practices and inputs as documentation. But they don't measure whether there is enough context for governance questions to be answered. An Organisational Memory Maturity Model (OMMM) shifts the focus from process maturity to epistemic maturity, defined by the sophistication of questions the organisation can answer with what artefacts remain.</p>
+<h3>Organisational Memory Maturity Model</h3>
+<p>We need a new method of enquiry. KMMs map whether organisations have existing knowledge management practices and inputs as documentation. But they don't measure whether there is enough context for governance questions to be answered. An Organisational Memory Maturity Model (OMMM) shifts the focus from process maturity to epistemic maturity, defined by the sophistication of questions the organisation can answer with what artefacts remain.</p>
 <ol>
 <li>
 <p>Knowledge storage - How can I save information?
@@ -87,11 +89,12 @@
 <p>An accurate judgement of decision quality requires not just the decision but the surrounding context of all the tradeoffs, assumptions, comparisons and reasoning that led up to it. </p>
 <p>Therefore, when an organisation only has explicit, fragmented documentation to reconstruct decisions from, governance is actually evaluating an unreliable proxy with deteriorating context. The ability to explain, defend and review these decisions degrades with it. A decision cannot be judged in a vacuum. </p>
 <p>This broken feedback loop is where responsible AI and governance breaks down. </p>
-<h2>A Proposed Solution</h2>
+<h2>Proposed Solutions</h2>
 <p>From what I've observed, the current solution to the broken feedback loop is to document every detail to the minute degree i.e. knowledge storage.</p>
 <p>Concrete example - I'd developed an evaluation rubric for the project I was on. A sample of 200 customer records would be gathered and assessed across 5 broad categories, and 18 sub-categories. Each record will be manually marked as a Success or Failure. Successes would be recorded at a category level, with the implication that all sub-categories were fulfilled, and key information included. A general comment as to why it's marked a Success would be written. Failures are classed as at least one sub-category failing, which would be recorded, the criterion(s) identified and the verbatim transcript noted. This was an exception-based approach, where more effort would be funnelled into clarifying deviations, rather than the norm.</p>
 <p>Our Risk function stated we must be recording sub-category information for both Successes and Failures i.e. noting every detail. I considered this enormous effort for a small team, given the criteria was already quite specific. For 200 records this would be 3600 lines of documentation overhead. </p>
 <p>The question then becomes "How do we preserve enough context such that the decision can be reconstructed later as faithfully as possible" i.e. how do we preserve minimum sufficient decision memory?</p>
+<h3>Addressing Epistemic Maturity</h3>
 <p>One way to address the epistemic maturity problem is by accounting for different types of teams and their particular position in time. A tool I've created is a structured, prompt-based Co-pilot notebook that uses AI as an automated retroactive assistant. The goal is to ensure that the context and learnings remain discoverable regardless of when the project is picked up.</p>
 <p>How this differs from a standard Confluence page is that it actively synthesises and reconstructs implicit reasoning from existing but disparate explicit artefacts at multiple points in time as context disintegrates. It also distinguishes between what can and can't be reliably reconstructed. Therefore, rather than writing everything down, the ability to quickly understand project details and context in future is optimised.</p>
 <p>The process: </p>
